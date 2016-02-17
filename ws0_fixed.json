@@ -42,30 +42,30 @@
                        }
                     ],
                     "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 3,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 482,
-                       "width": 722,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Terminal",
-                    "percent": 0.75,
-                    "swallows": [
-                       {
+                }//,
+                //{
+                //    "border": "pixel",
+                //    "current_border_width": 3,
+                //    "floating": "auto_off",
+                //    "geometry": {
+                //       "height": 482,
+                //       "width": 722,
+                //       "x": 0,
+                //       "y": 0
+                //    },
+                //    "name": "Terminal",
+                //    "percent": 0.75,
+                //    "swallows": [
+                //       {
                        // "class": "^Gnome\\-terminal$",
                        // "instance": "^gnome\\-terminal\\-server$",
                        // "title": "^Terminal$",
                        // "transient_for": "^$",
-                       "window_role": "mon-iftop"
-                       }
-                    ],
-                    "type": "con"
-                }
+                //       "window_role": "mon-iftop"
+                //       }
+                //    ],
+                //    "type": "con"
+                //}
             ]
         },
         {
