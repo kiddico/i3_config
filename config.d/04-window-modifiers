@@ -1,0 +1,9 @@
+
+####################
+# Window Modifiers #
+####################
+### For Floating windows
+# This one is pretty cool. If you've got a fullscreen video
+# this will make it a floating window preset to 1280x720 (kinda... you'll see)
+# hold shift when resizing to keep proportions
+bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;

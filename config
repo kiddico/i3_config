@@ -1,0 +1,300 @@
+# Set Some Modifiers
+set $mod Mod4
+# how does this do anything? it doesn't... you can't just hit the mod key....
+floating_modifier $mod
+
+##################
+# Default Stuffs #
+##################
+
+# Well... I mean.... I changed some stuff....
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+g split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+mod1+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+#setting workspaces
+###Number Row
+set $ws0 0:mon
+set $ws1 1:
+set $ws2 2:
+set $ws3 3:
+set $ws4 4:
+set $ws5 5:
+set $ws6 6:
+set $ws7 7:steam
+set $ws8 8:la música
+set $ws9 9:holds
+set $ws10 10:School
+###Numberpad
+set $wsKP_1 K1
+set $wsKP_2 K2
+set $wsKP_3 K3
+set $wsKP_4 K4
+set $wsKP_5 K5
+set $wsKP_6 K6
+set $wsKP_7 K7
+set $wsKP_8 K8
+set $wsKP_9 K9
+set $wsKP_0 K0
+
+# switch to workspace
+###Number Row
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+bindsym $mod+grave workspace $ws0
+bindsym $mod+Alt+grave workspace $ws-1
+###Numberpad
+bindsym $mod+KP_1 workspace $wsKP_1
+bindsym $mod+KP_2 workspace $wsKP_2
+bindsym $mod+KP_3 workspace $wsKP_3
+bindsym $mod+KP_4 workspace $wsKP_4
+bindsym $mod+KP_5 workspace $wsKP_5
+bindsym $mod+KP_6 workspace $wsKP_6
+bindsym $mod+KP_7 workspace $wsKP_7
+bindsym $mod+KP_8 workspace $wsKP_8
+bindsym $mod+KP_9 workspace $wsKP_9
+bindsym $mod+KP_0 workspace $wsKP_0
+
+# move focused container to workspace
+###Number Row
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Shift+grave move container to workspace $ws0
+bindsym $mod+Shift+Alt+grave move container to workspace $ws-1
+###Numberpad
+bindsym $mod+Shift+KP_1 move container to workspace $wsKP_1
+bindsym $mod+Shift+KP_2 move container to workspace $wsKP_2
+bindsym $mod+Shift+KP_3 move container to workspace $wsKP_3
+bindsym $mod+Shift+KP_4 move container to workspace $wsKP_4
+bindsym $mod+Shift+KP_5 move container to workspace $wsKP_5
+bindsym $mod+Shift+KP_6 move container to workspace $wsKP_6
+bindsym $mod+Shift+KP_7 move container to workspace $wsKP_7
+bindsym $mod+Shift+KP_8 move container to workspace $wsKP_8
+bindsym $mod+Shift+KP_9 move container to workspace $wsKP_9
+bindsym $mod+Shift+KP_0 move container to workspace $wsKP_0
+
+
+#bindsym $mod+shift+` move container to workspace $thinking
+bindsym $mod+x move workspace to output right
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Note to self: learn to use modes cause they're freaking sweet
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+		#these were all set to 10
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+		#for some reason the px values were set to 20 and the other to 10
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+#######################################
+# Startup Applications / Matt Daemons #
+#######################################
+exec --no-startup-id nm-applet
+exec --no-startup-id feh --bg-fill /home/nick/.config/i3/clouds.jpg
+exec --no-startup-id compton --config ~/.compton.conf -CGb -d :0
+exec --no-startup-id redshift -l 41.154426:-81.333052
+exec --no-startup-id light-locker --lock-on-suspend
+#############################
+# Window Properties Setting #
+#############################
+###by class
+for_window [class="Qalculate"] floating enable
+for_window [class="floater"] floating enable
+for_window [class="Nvidia-settings"] floating enable
+for_window [class="Eog"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="Gtk-recordmydesktop"] floating enable
+for_window [class="Lxappearance"] floating enable
+###by window role (cheatsy doodles)
+for_window [window_role="floatterm"] floating enable
+
+###by title (WM_NAME)
+for_window [title="Event Tester"] floating enable
+for_window [title=".* - Chat"] floating enable
+for_window [title="floater"] floating enable
+for_window [title="Terminator Preferences"] floating enable
+
+# Workspace Assignments
+assign [class="Steam"] $ws7
+assign [title="OpenGL"] $ws7
+assign [class="Spotify"] $ws8
+#####################
+# Execution Hotkeys #
+#####################
+
+
+### Open Programs
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
+bindsym $mod+Shift+T exec thunar --class floater
+bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
+bindsym $mod+Tab exec lighthouse | sh
+bindsym $mod+n exec sudo nvidia-settings
+bindsym $mod+slash exec google-chrome 
+bindsym $mod+Shift+p exec pavucontrol --class floater
+bindsym $mod+p exec pavucontrol
+bindsym $mod+t exec thunar
+bindsym Print exec maim ~/$(date +%m-%d_%H%M%S).jpg
+
+### Media Keys
+## From when I was a man of honor
+#bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 5+ unmute"
+#bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5- unmute"
+#bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+#bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
+bindsym XF86AudioMute exec "amixer -D pulse sset Master toggle"
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
+
+####################
+# Window Modifiers #
+####################
+### For Floating windows
+# This one is pretty cool. If you've got a fullscreen video
+# this will make it a floating window preset to 1280x720 (kinda... you'll see)
+# hold shift when resizing to keep proportions
+bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;
+exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh & disown
+exec --no-startup-id spotify
+exec --no-startup-id i3-msg "workspace 0:mon; append_layout /home/nick/.config/i3/ws0_fixed.json"
+exec --no-startup-id i3-msg "workspace 7:steam; append_layout /home/nick/.config/i3/steam_fixed.json"
+exec --no-startup-id /home/nick/.config/i3/start_em
+exec --no-startup-id steam
+#exec --no-startup-id i3-msg "workspace 1:Old Faithful"
+#######################
+# I prefer fried rice #
+#######################
+
+font xft:Hack-Regular:size=10:antialias=true
+gaps inner 10
+gaps outer 15
+hide_edge_borders none
+for_window [class="^.*"] border pixel 3
+popup_during_fullscreen smart
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+
+bar {
+    #font xft:Hack:antialias=true
+    font xft:Hack 14
+    position bottom
+    status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {text}, {temp}°{unit_temperature}' --wrap-i3-status 2431662
+
+    colors {
+			background			#58615e
+			statusline			#c1c9d4
+
+			#					border	bckgrnd	textclr
+			focused_workspace	#c1c9d4 #58615e #c1c9d4
+			active_workspace	#c1c9d4 #58615e #c1c9d4
+			inactive_workspace	#58615e #58615e #c1c9d4
+			urgent_workspace	#ffffff #000000 #ffffff
+
+    }
+}
+
+
+##########
+# Colors #
+##########
+
+client.focused          #a07dff #7DAEAE #ffffff #7DAEAE
+client.focused_inactive #00b4d2 #426180 #ffffff #426180
+client.unfocused        #00004d #58615e #888888 #58615e
+client.urgent           #2f343a #900000 #ffffff #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000
+bindsym XF86Calculator exec qalculate

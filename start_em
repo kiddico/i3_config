@@ -1,0 +1,5 @@
+gnome-terminal --role="mon-htop" -e "htop" & disown
+gnome-terminal --role="mon-iftop" -e "sudo iftop -c /home/nick/.iftoprc" & disown
+gnome-terminal --role="mon-term" & disown
+gnome-terminal --role="mon-clock" -e "tty-clock -sc" & disown
+psensor & disown

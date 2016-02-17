@@ -1,0 +1,27 @@
+#####################
+# Execution Hotkeys #
+#####################
+
+
+### Open Programs
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
+bindsym $mod+Shift+T exec thunar --class floater
+bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
+bindsym $mod+Tab exec lighthouse | sh
+bindsym $mod+n exec sudo nvidia-settings
+bindsym $mod+slash exec google-chrome 
+bindsym $mod+Shift+p exec pavucontrol --class floater
+bindsym $mod+p exec pavucontrol
+bindsym $mod+t exec thunar
+bindsym Print exec maim ~/$(date +%m-%d_%H%M%S).jpg
+
+### Media Keys
+## From when I was a man of honor
+#bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 5+ unmute"
+#bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5- unmute"
+#bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+#bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
+bindsym XF86AudioMute exec "amixer -D pulse sset Master toggle"
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"

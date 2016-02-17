@@ -1,0 +1,52 @@
+{
+    // this is a manually added container to restore the vertical split
+    "layout": "splith",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 949,
+       "width": 274,
+       "x": 53,
+       "y": 53
+    },
+    "name": "Friends",
+    "percent": 0.195121531758771,
+    "swallows": [
+       {
+       "class": "Steam",
+       "title": "Friends"
+       }
+    ],
+    "type": "con"
+},
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 949,
+       "width": 1494,
+       "x": 373,
+       "y": 53
+    },
+    "name": "Steam",
+    "percent": 0.804878468241229,
+    "swallows": [
+       {
+       "class": "Steam",
+       "title": "Steam"
+       }
+    ],
+    "type": "con"
+}
+
+
+    ]
+}

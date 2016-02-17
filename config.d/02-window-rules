@@ -1,0 +1,24 @@
+#############################
+# Window Properties Setting #
+#############################
+###by class
+for_window [class="Qalculate"] floating enable
+for_window [class="floater"] floating enable
+for_window [class="Nvidia-settings"] floating enable
+for_window [class="Eog"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="Gtk-recordmydesktop"] floating enable
+for_window [class="Lxappearance"] floating enable
+###by window role (cheatsy doodles)
+for_window [window_role="floatterm"] floating enable
+
+###by title (WM_NAME)
+for_window [title="Event Tester"] floating enable
+for_window [title=".* - Chat"] floating enable
+for_window [title="floater"] floating enable
+for_window [title="Terminator Preferences"] floating enable
+
+# Workspace Assignments
+assign [class="Steam"] $ws7
+assign [title="OpenGL"] $ws7
+assign [class="Spotify"] $ws8
