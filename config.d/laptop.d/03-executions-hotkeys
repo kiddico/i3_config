@@ -1,0 +1,1 @@
+bindsym $mod+c exec qalculate

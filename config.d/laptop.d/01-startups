@@ -1,0 +1,3 @@
+exec --no-startup-id sudo /usr/local/bin/fix_wakeup
+exec --no-startup-id sudo /usr/local/bin/stop_interrupts
+exec --no-startup-id sudo /usr/local/bin/stop_interrupts
