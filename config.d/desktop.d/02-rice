@@ -25,7 +25,7 @@ bar {
 		statusline			#c1c9d4
 		separator			#e0e0e0
 
-		border› bckgrnd›textclr
+		#					border› bckgrnd›textclr
 		focused_workspace	#58615e #58615e #27C7E2
 		active_workspace	#58615e #58615e #c1c9d4
 		inactive_workspace	#58615e #58615e #c1c9d4
