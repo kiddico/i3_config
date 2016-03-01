@@ -2,7 +2,6 @@
 # Startup Applications / Matt Daemons #
 #######################################
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill /home/nick/.config/i3/clouds.jpg
 exec --no-startup-id compton --config ~/.compton.conf -CGb -d :0
 exec --no-startup-id redshift -l 41.154426:-81.333052
 exec --no-startup-id light-locker --lock-on-suspend

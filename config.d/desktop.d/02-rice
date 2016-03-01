@@ -2,6 +2,7 @@
 # I prefer fried rice #
 #######################
 
+feh --bg-fill /3tb/Pictures/backgrounds/del_la_hipsters/nNa6fC1.jpg
 font xft:Hack-Regular:size=10:antialias=true
 gaps inner 10
 gaps outer 15
