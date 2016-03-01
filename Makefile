@@ -2,6 +2,7 @@
 #RMconf=$(RM)/
 
 config: config.d/*
+	rm -f config
 	rm -f config.d/.*~
 	rm -f config.d/*~
 	cat config.d/*-* > config
