@@ -21,15 +21,15 @@ bar {
     status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {text}, {temp}°{unit_temperature}' --wrap-i3-status 2431662
 
 	colors {
-		background› ›   ›   #58615e
-		statusline› ›   ›   #c1c9d4
-		separator›  ›   ›   #e0e0e0
+		background			#58615e
+		statusline			#c1c9d4
+		separator			#e0e0e0
 
 		border› bckgrnd›textclr
-		focused_workspace›  #58615e #58615e #27C7E2
-		active_workspace›   #58615e #58615e #c1c9d4
-		inactive_workspace› #58615e #58615e #c1c9d4
-		urgent_workspace›   #ffffff #000000 #ffffff
+		focused_workspace	#58615e #58615e #27C7E2
+		active_workspace	#58615e #58615e #c1c9d4
+		inactive_workspace	#58615e #58615e #c1c9d4
+		urgent_workspace	#ffffff #000000 #ffffff
 	}
 
 }
