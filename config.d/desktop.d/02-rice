@@ -28,7 +28,7 @@ bar {
 
 		#					border› bckgrnd›textclr
 		focused_workspace	#58615e #58615e #27C7E2
-		active_workspace	#58615e #58615e #c1c9d4
+		active_workspace	#58615e #58615e #2FC267
 		inactive_workspace	#58615e #58615e #c1c9d4
 		urgent_workspace	#ffffff #000000 #ffffff
 	}
