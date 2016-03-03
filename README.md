@@ -6,3 +6,5 @@ You're free to use, modify, and distribute this as you please. Or whatever.
 
 ### TODO:
 	- Make workspace names part of 02-rice
+	- Switch to i3blocks
+	- Add Cycle through workspaces / arrow switching.
