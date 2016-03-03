@@ -45,3 +45,21 @@ client.focused_inactive #00b4d2 #426180 #ffffff #426180
 client.unfocused        #00004d #58615e #888888 #58615e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+
+####################
+# Workspace Naming #
+####################
+
+###Number Row
+set $ws0 0:mon
+set $ws1 1:
+set $ws2 2:
+set $ws3 3:
+set $ws4 4:
+set $ws5 5:
+set $ws6 6:
+set $ws7 7:steam
+set $ws8 8:la música
+set $ws9 9:holds
+set $ws10 10:School
