@@ -1,4 +1,0 @@
-while true; do
-feh --randomize --bg-fill /home/nick/Pictures/backgrounds/high_res
-sleep 45
-done
