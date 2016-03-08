@@ -1,7 +1,8 @@
 exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh & disown
 exec --no-startup-id spotify
 exec --no-startup-id i3-msg "workspace 0:mon; append_layout /home/nick/.config/i3/ws0_fixed.json"
-exec --no-startup-id i3-msg "workspace 7:steam; append_layout /home/nick/.config/i3/steam_fixed.json"
+#exec --no-startup-id i3-msg "workspace 7:steam;
+#append_layout /home/nick/.config/i3/steam_fixed.json"
 exec --no-startup-id /home/nick/.config/i3/start_em
 exec --no-startup-id steam
 #exec --no-startup-id i3-msg "workspace 1:Old Faithful"

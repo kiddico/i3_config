@@ -1,3 +1,7 @@
+
+exec --no-startup-id sudo /usr/local/bin/fix_wakeup
+exec --no-startup-id sudo /usr/local/bin/stop_interrupts
+exec --no-startup-id sudo /usr/local/bin/stop_interrupts
 #######################
 # I prefer fried rice #
 #######################
@@ -48,3 +52,4 @@ client.unfocused        #00004d #58615e #888888 #58615e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 client.background       #ffffff
+bindsym $mod+c exec qalculate
