@@ -2,7 +2,8 @@
 # I prefer fried rice #
 #######################
 
-font xft:Hack-Regular 13
+exec --no-startup-id feh --bg-fill /home/nick/backpack/backs/god_damn/ocean.jpg
+font xft:Hack-Regular,FontAwesome 13
 hide_edge_borders none
 for_window [class="^.*"] border pixel 3
 popup_during_fullscreen smart
@@ -12,7 +13,7 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-	font xft: Hack-Regular 13
+	font xft: Hack-Regular,FontAwesome 13
     #font pango:DejaVu Sans Mono 13
 	#font pango:Economica, FontAwesome 14
     position bottom
@@ -20,16 +21,16 @@ bar {
     #mode hide
 
     #status_command i3blocks
-	#status_command i3status -c /home/nick/.config/i3/i3status.conf
-    status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format '⛅ {temp}°' --wrap-i3-status 2431662
+#status_command i3status -c /home/nick/.config/i3/i3status.conf
+    status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format '{temp}°' --wrap-i3-status 2431662
 
     colors {
 			background			#58615e
-			statusline			#c1c9d4
+			statusline			#C2C2C2
 			separator			#e0e0e0
 
 			#					border	bckgrnd	textclr
-			focused_workspace	#58615e #58615e #27C7E2
+			focused_workspace	#58615e #58615e #BCD6FF
 			active_workspace	#58615e #58615e #c1c9d4
 			inactive_workspace	#58615e #58615e #c1c9d4
 			urgent_workspace	#ffffff #000000 #ffffff
