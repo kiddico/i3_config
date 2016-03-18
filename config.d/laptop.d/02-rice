@@ -27,10 +27,10 @@ bar {
     colors {
 			background			#58615e
 			statusline			#C2C2C2
-			separator			#e0e0e0
+			separator			#c2c2c2
 
 			#					border	bckgrnd	textclr
-			focused_workspace	#58615e #58615e #BCD6FF
+			focused_workspace	#58615e #58615e #FFDAA7
 			active_workspace	#58615e #58615e #c1c9d4
 			inactive_workspace	#58615e #58615e #c1c9d4
 			urgent_workspace	#ffffff #000000 #ffffff
