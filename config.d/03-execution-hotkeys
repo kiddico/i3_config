@@ -15,6 +15,7 @@ bindsym $mod+Shift+p exec pavucontrol --class floater
 bindsym $mod+p exec pavucontrol
 bindsym $mod+t exec thunar
 bindsym Print exec maim ~/$(date +%m-%d_%H%M%S).jpg
+bindsym $mod+shift+L /usr/local/bin/lock
 
 ### Media Keys
 ## From when I was a man of honor
