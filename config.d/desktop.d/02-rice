@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id feh --bg-fill /3tb/Pictures/backgrounds/de_la_hipsters/nNa6fC1.jpg
+exec --no-startup-id feh --bg-fill /home/nick/backpack/backs/god_damn/ocean.jpg
 font xft:Hack-Regular,FontAwesome 14
 #gaps inner 10
 #gaps outer 15
