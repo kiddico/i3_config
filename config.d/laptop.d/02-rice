@@ -22,7 +22,7 @@ bar {
 
     #status_command i3blocks
 #status_command i3status -c /home/nick/.config/i3/i3status.conf
-    status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {temp}° ' --wrap-i3-status 2431662
+    status_command i3status -c ~/.config/i3/i3status_laptop.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {temp}° ' --wrap-i3-status 2431662
 
     colors {
 			background			#58615e
