@@ -4,8 +4,8 @@
 
 exec --no-startup-id feh --bg-fill /3tb/Pictures/backgrounds/de_la_hipsters/nNa6fC1.jpg
 font xft:Hack-Regular,FontAwesome 14
-gaps inner 10
-gaps outer 15
+#gaps inner 10
+#gaps outer 15
 hide_edge_borders none
 for_window [class="^.*"] border pixel 3
 popup_during_fullscreen smart
@@ -18,7 +18,8 @@ bar {
     #font xft:Hack:antialias=true
     font xft:Hack,FontAwesome 14
     position bottom
-    status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {text}, {temp}°{unit_temperature}' --wrap-i3-status 2431662
+    #status_command i3status -c ~/.config/i3/i3status.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {text}, {temp}°{unit_temperature}' --wrap-i3-status 2431662
+    status_command i3status -c ~/.config/i3/i3status_desktop.conf
 
 	colors {
 		background			#58615e
