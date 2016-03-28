@@ -3,7 +3,7 @@
 #######################
 
 exec --no-startup-id feh --bg-fill /home/nick/backpack/backs/god_damn/ocean.jpg
-font xft:Hack-Regular,FontAwesome 14
+font pango:Hack,FontAwesome 14
 #gaps inner 10
 #gaps outer 15
 hide_edge_borders none
@@ -16,20 +16,20 @@ popup_during_fullscreen smart
 #############################
 bar {
     #font xft:Hack:antialias=true
-    font xft:Hack,FontAwesome 14
+    font pango:Hack,FontAwesome 14
     position bottom
-    status_command i3status -c ~/.config/i3/i3status_desktop.conf | ~/.config/i3/weather.py --position 1 --unit c --format ' {text}, {temp}°{unit_temperature}' --wrap-i3-status 2431662
-    #status_command i3status -c ~/.config/i3/i3status_desktop.conf
+    #status_command i3status -c ~/.config/i3/i3status_desktop.conf | ~/.config/i3/weather.py --position 1 --unit c --format '{temp}°{unit_temperature}' --wrap-i3-status 2431662
+    status_command i3status -c ~/.config/i3/i3status_desktop.conf
 
 	colors {
-		background			#58615e
-		statusline			#c1c9d4
+		background			#A0A8AA
+		statusline			#426180
 		separator			#e0e0e0
 
-		#					border› bckgrnd›textclr
-		focused_workspace	#58615e #58615e #27C7E2
-		active_workspace	#58615e #58615e #2FC267
-		inactive_workspace	#58615e #58615e #c1c9d4
+#							border› bckgrnd›textcl
+		focused_workspace	#A0A8AA #A0A8AA #7D3F00
+		active_workspace	#A0A8AA #A0A8AA #426180
+		inactive_workspace	#A0A8AA #A0A8AA #426180
 		urgent_workspace	#ffffff #000000 #ffffff
 	}
 
@@ -40,8 +40,10 @@ bar {
 # Colors #
 ##########
 
-client.focused          #a07dff #7DAEAE #ffffff #7DAEAE
-client.focused_inactive #00b4d2 #426180 #ffffff #426180
-client.unfocused        #00004d #58615e #888888 #58615e
+# class                 border  backgr. text    indicator child_border
+
+client.focused          #426180 #426180 #ffffff #7DAEAE
+client.focused_inactive #A0A8AA #A0A8AA #ffffff #426180
+client.unfocused        #A0A8AA #A0A8AA #888888 #58615e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
