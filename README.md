@@ -4,6 +4,7 @@ Things have been broken up into .d folders and are recompiled into one config fi
 
 You're free to use, modify, and distriibute this as you please. Or whatever.
 
-#### Ideas
+#### Ideas / Todo
 *move color themeing into seperate files
 	*change makefile to support swapping seperate of laptop/desktop
+*give the workspaces names again.
