@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id feh --bg-fill /home/nick/backpack/backs/god_damn/ocean.jpg
+exec --no-startup-id feh --bg-fill theme/background.jpg
 font pango:Hack,FontAwesome 14
 #gaps inner 10
 #gaps outer 15
