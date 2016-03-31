@@ -15,11 +15,9 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-    #font xft:Hack:antialias=true
     font pango:Hack,FontAwesome 14
     position bottom
-    #status_command i3status -c ~/.config/i3/i3status_desktop.conf | ~/.config/i3/weather.py --position 1 --unit c --format '{temp}°{unit_temperature}' --wrap-i3-status 2431662
-    status_command i3status -c ~/.config/i3/i3status_desktop.conf
+    status_command i3status -c ~/.config/i3/light/i3status.conf
 
 	colors {
 		background			#A0A8AA
