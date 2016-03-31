@@ -17,7 +17,7 @@ bar {
     #font pango:DejaVu Sans Mono 13
     position bottom
 
-	status_command i3status -c /home/nick/.config/i3/thems/dark/i3status.conf
+	status_command i3status -c /home/nick/.config/i3/theme/i3status.conf
 
     colors {
 			background			#58615e

@@ -1,0 +1,47 @@
+#######################
+# I prefer fried rice #
+#######################
+
+exec --no-startup-id feh --bg-fill /home/nick/backpack/backs/god_damn/ocean.jpg
+font pango:Hack,FontAwesome 14
+#gaps inner 10
+#gaps outer 15
+hide_edge_borders none
+for_window [class="^.*"] border pixel 3
+popup_during_fullscreen smart
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+bar {
+    font pango:Hack,FontAwesome 14
+    position bottom
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
+
+	colors {
+		background			#A0A8AA
+		statusline			#426180
+		separator			#e0e0e0
+
+#							border› bckgrnd›textcl
+		focused_workspace	#A0A8AA #A0A8AA #7D3F00
+		active_workspace	#A0A8AA #A0A8AA #426180
+		inactive_workspace	#A0A8AA #A0A8AA #426180
+		urgent_workspace	#ffffff #000000 #ffffff
+	}
+
+}
+
+
+##########
+# Colors #
+##########
+
+# class                 border  backgr. text    indicator child_border
+
+client.focused          #426180 #426180 #ffffff #7DAEAE
+client.focused_inactive #A0A8AA #A0A8AA #ffffff #426180
+client.unfocused        #A0A8AA #A0A8AA #888888 #58615e
+client.urgent           #2f343a #900000 #ffffff #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000

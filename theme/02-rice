@@ -17,7 +17,7 @@ popup_during_fullscreen smart
 bar {
     font pango:Hack,FontAwesome 14
     position bottom
-    status_command i3status -c ~/.config/i3/light/i3status.conf
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
 		background			#A0A8AA
