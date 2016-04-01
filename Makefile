@@ -2,12 +2,12 @@ theme="current"
 
 desktop: 
 	rm -f config
-	rm -f config.d/.*~
-	rm -f config.d/*~
-	cat config.d/*-* > config
-	rm -f config.d/desktop.d/.*~
-	rm -f config.d/desktop.d/*~
-	cat config.d/desktop.d/* >> config
+	rm -f settings/.*~
+	rm -f settings/*~
+	cat settings/*-* > config
+	rm -f settings/desktop.d/.*~
+	rm -f settings/desktop.d/*~
+	cat settings/desktop.d/* >> config
 ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
@@ -20,12 +20,12 @@ endif
 
 laptop:
 	rm -f config
-	rm -f config.d/.*~
-	rm -f config.d/*~
-	cat config.d/*-* > config
-	rm -f config.d/laptop.d/.*~
-	rm -f config.d/laptop.d/*~
-	cat config.d/laptop.d/* >> config
+	rm -f settings/.*~
+	rm -f settings/*~
+	cat settings/*-* > config
+	rm -f settings/laptop.d/.*~
+	rm -f settings/laptop.d/*~
+	cat settings/laptop.d/* >> config
 ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
