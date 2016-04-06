@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id feh --bg-fill theme/background.jpg
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font xft:Hack-Regular,FontAwesome 13
 hide_edge_borders none
 for_window [class="^.*"] border pixel 3
