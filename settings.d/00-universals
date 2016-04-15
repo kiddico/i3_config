@@ -64,7 +64,7 @@ bindsym $mod+a focus parent
 
 #setting workspaces
 ###Number Row
-set $ws0 0 mon
+set $ws0 0BS
 set $ws1 1 web
 set $ws2 2 work
 set $ws3 3 media
