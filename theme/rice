@@ -26,7 +26,7 @@ bar {
 
 #							border› bckgrnd›textcl
 		focused_workspace	#A0A8AA #A0A8AA #7D3F00
-		active_workspace	#A0A8AA #A0A8AA #426180
+		active_workspace	#A0A8AA #A0A8AA #BF9903
 		inactive_workspace	#A0A8AA #A0A8AA #426180
 		urgent_workspace	#ffffff #000000 #ffffff
 	}

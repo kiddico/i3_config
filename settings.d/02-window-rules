@@ -4,7 +4,8 @@
 ###by class
 for_window [class="Qalculate"] floating enable
 for_window [class="floater"] floating enable
-for_window [class="Nvidia-settings"] floating enable
+# This was getting kind of annoying, but just in case the new way is even worse...
+#for_window [class="Nvidia-settings"] floating enable
 for_window [class="Eog"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Gtk-recordmydesktop"] floating enable
