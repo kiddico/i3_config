@@ -3,3 +3,4 @@
 #exec --no-startup-id sudo /usr/local/bin/stop_interrupts
 #exec --no-startup-id light-locker --lock-on-suspend
 exec --no-startup-id sudo su -c "echo 'XHC' > wakeup"
+exec --no-startup-id nm-applet
