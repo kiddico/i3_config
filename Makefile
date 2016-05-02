@@ -11,12 +11,12 @@ desktop:
 ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
+	rm -rf theme/background*
 	cp theme/$(theme)/rice theme/rice
 	cp theme/$(theme)/i3status.conf theme/i3status.conf
 	cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
-
-
+	i3-msg "$(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
 endif
 	cat theme/rice >> config
 	i3-msg reload
@@ -32,9 +32,12 @@ laptop:
 ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
+	rm -rf theme/background*
 	cp theme/$(theme)/rice theme/rice
 	cp theme/$(theme)/i3status.conf theme/i3status.conf
-	cp theme/$(theme)/background.jpg theme/background.jpg
+	cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
+	cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
+	i3-msg "$(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
 endif
 	cat theme/rice >> config
 	i3-msg reload
