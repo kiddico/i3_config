@@ -13,7 +13,10 @@ ifeq ($(theme),"current")
 else
 	cp theme/$(theme)/rice theme/rice
 	cp theme/$(theme)/i3status.conf theme/i3status.conf
-	cp theme/$(theme)/background.jpg theme/background.jpg
+	cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
+	cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
+
+
 endif
 	cat theme/rice >> config
 	i3-msg reload
