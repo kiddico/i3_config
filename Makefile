@@ -19,7 +19,7 @@ else
 endif
 	@cat theme/rice >> config
 	@i3-msg reload
-	@i3-msg "$(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
+	@i3-msg "exec --no-startup-id $(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
 
 laptop:
 	@rm -f config
@@ -40,4 +40,4 @@ else
 endif
 	@cat theme/rice >> config
 	@i3-msg reload
-	@i3-msg "$(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
+	@i3-msg "exec --no-startup-id $(cat /home/nick/.config/i3/config | grep "\-\-bg\-")"
