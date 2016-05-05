@@ -20,7 +20,4 @@ if you want you can change just the config.
 or re-apply the same config, with a different theme.
 `make laptop theme=light; make laptop theme=dark;`
 
-#### Ideas / Todo
-* give the workspaces names again.
-
 #####You're free to use, modify, and distribute this as you please. Or whatever.
