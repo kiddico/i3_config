@@ -1,0 +1,3 @@
+[submodule "term"]
+	path = term
+	url = https://github.com/gnumoksha/gnome-terminal-colors
