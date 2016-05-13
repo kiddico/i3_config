@@ -1,5 +1,5 @@
 # i3_config
-This was just a place to keep my config files, but now it's that, and a cool makefile to quickly swap configes around.
+This was just a place to keep my config files, but now it's that, and a cool makefile to quickly swap configs around.
 
 #### The structure
 So the idea is that a simple makefile can be used to do all the configuration compilation, and long as the folder structure is there to support it. Most parts the config are made from the config.d folder, and the theme is in the theme folder (whoa! right?).
