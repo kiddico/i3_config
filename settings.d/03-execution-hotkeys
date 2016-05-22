@@ -11,7 +11,7 @@ bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
 bindsym $mod+Tab exec lighthouse | sh
 bindsym $mod+n exec sudo nvidia-settings --class floater
 bindsym $mod+Shift+n exec vibrance
-bindsym $mod+slash exec google-chrome 
+bindsym $mod+slash exec google-chrome-stable 
 bindsym $mod+Shift+p exec pavucontrol --class floater
 bindsym $mod+p exec pavucontrol
 bindsym $mod+t exec thunar
