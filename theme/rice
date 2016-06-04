@@ -1,0 +1,47 @@
+#######################
+# I prefer fried rice #
+#######################
+
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
+font pango:Hack,FontAwesome 14
+#gaps inner 10
+#gaps outer 15
+hide_edge_borders none
+for_window [class="^.*"] border pixel 3
+popup_during_fullscreen smart
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+bar {
+    font pango:Hack,FontAwesome 14
+    position bottom
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
+
+	colors {
+		background			#1ABC9C
+		statusline			#2839DF
+		separator			#1ABC9C
+
+#							border› bckgrnd›textcol
+		focused_workspace	#1ABC9C #1ABC9C #AA2982
+		active_workspace	#1ABC9C #1ABC9C #2839DF
+		inactive_workspace	#1ABC9C #1ABC9C #FFE6DB
+		urgent_workspace	#ffffff #000000 #ffffff
+	}
+
+}
+
+
+##########
+# Colors #
+##########
+
+# class                 border  backgr. text    indicator child_border
+
+client.focused          #426180 #9962DC #ffffff #7DAEAE
+client.focused_inactive #A0A8AA #6297DC #ffffff #426180
+client.unfocused        #A0A8AA #A0A8AA #888888 #58615e
+client.urgent           #2f343a #900000 #ffffff #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000

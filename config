@@ -205,6 +205,9 @@ for_window [title=".* - Chat"] floating enable
 for_window [title="floater"] floating enable
 for_window [title="Terminator Preferences"] floating enable
 
+###by type
+for_window [window_type=normal] border pixel 3
+
 # Workspace Assignments
 assign [class="Steam"] $ws7
 assign [title="OpenGL"] $ws7
@@ -219,8 +222,10 @@ assign [class="spotify"] $ws8
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
 bindsym $mod+Shift+T exec thunar --class floater
-bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
+#bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
 #bindsym $mod+Tab exec lighthouse | sh
+bindsym $mod+Tab exec "rofi -show run -lines 4 -eh 2 -width 100 -padding 460 -opacity 80 -bw 0 -hlfg #9575cd -font Hack 28 -fake-transparency -rnow"
+bindsym $mod+d exec "rofi -show run -lines 4 -eh 2 -width 100 -padding 460 -opacity 80 -bw 0 -hlfg #9575cd -font Hack 28 -fake-transparency -rnow"
 bindsym $mod+n exec sudo nvidia-settings --class floater
 bindsym $mod+Shift+n exec vibrance
 bindsym $mod+slash exec google-chrome-stable 
@@ -248,18 +253,9 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
 # this will make it a floating window preset to 1280x720 (kinda... you'll see)
 # hold shift when resizing to keep proportions
 bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;
-#exec --no-startup-id sudo /usr/local/bin/fix_wakeup
-#exec --no-startup-id sudo /usr/local/bin/stop_interrupts
-#exec --no-startup-id sudo /usr/local/bin/stop_interrupts
-#exec --no-startup-id light-locker --lock-on-suspend
-exec --no-startup-id sudo su -c "echo 'XHC' > /proc/acpi/wakeup"
-exec --no-startup-id nm-applet
-bindsym $mod+c exec qalculate
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-
-
-bindsym $mod+Tab exec "rofi -show run -lines 3 -eh 2 -width 100 -padding 480 -opacity '80' -bw 0 -hlfg '#9575cd' -font 'Hack 28' -fake-transparency -rnow"
+exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh & disown
+exec --no-startup-id /home/nick/.bin/TB
+bindsym XF86Calculator exec qalculate
 #######################
 # I prefer fried rice #
 #######################
