@@ -8,7 +8,8 @@ bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
 bindsym $mod+Shift+T exec thunar --class floater
 bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
-bindsym $mod+Tab exec lighthouse | sh
+#bindsym $mod+Tab exec lighthouse | sh
+bindsym $mod+Tab exec "rofi -show run -lines 4 -eh 2 -width 100 -padding 480 -opacity 80 -bw 0 -hlfg #9575cd -font Hack 28 -fake-transparency -rnow"
 bindsym $mod+n exec sudo nvidia-settings --class floater
 bindsym $mod+Shift+n exec vibrance
 bindsym $mod+slash exec google-chrome-stable 
