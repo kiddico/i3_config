@@ -20,4 +20,11 @@ if you want you can change just the config.
 or re-apply the same config, with a different theme.
 `make laptop theme=light; make laptop theme=dark;`
 
+####Things that need to be done
+move over to using xresources for more things. Seeing as i3 supports it, and rofi supports it....
+
+merge with dot_files repo in a better way
+
+find a good way to import settings into a new system that works with the merge
+
 #####You're free to use, modify, and distribute this as you please. Or whatever.
