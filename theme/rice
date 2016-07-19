@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
+exec --no-startup-id "feh --bg-tile /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
 #gaps inner 10
 #gaps outer 15
@@ -20,15 +20,15 @@ bar {
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
-		background			#1ABC9C
-		statusline			#2839DF
-		separator			#1ABC9C
+		background			#7696AF
+		statusline			#58517A
+		separator			#88AD9B
 
 #							border› bckgrnd›textcol
-		focused_workspace	#1ABC9C #1ABC9C #AA2982
-		active_workspace	#1ABC9C #1ABC9C #2839DF
-		inactive_workspace	#1ABC9C #1ABC9C #FFE6DB
-		urgent_workspace	#ffffff #000000 #ffffff
+		focused_workspace	#7696AF #7696AF #E4B2A9
+		active_workspace	#7696AF #7696AF #58517A
+		inactive_workspace	#7696AF #7696AF #58517A
+		urgent_workspace	#ffffff #000000 #58517A
 	}
 
 }
@@ -40,8 +40,8 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #426180 #9962DC #ffffff #7DAEAE
-client.focused_inactive #A0A8AA #6297DC #ffffff #426180
-client.unfocused        #A0A8AA #A0A8AA #888888 #58615e
+client.focused          #426180 #E17A67 #ffffff #7DAEAE
+client.focused_inactive #A0A8AA #22A3C4 #ffffff #426180
+client.unfocused        #A0A8AA #919FBC #888888 #58615e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000

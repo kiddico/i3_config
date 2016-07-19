@@ -25,9 +25,9 @@ bar {
 		separator			#88AD9B
 
 #							border› bckgrnd›textcol
-		focused_workspace	#7696AF #7696AF #E17A67
-		active_workspace	#7696AF #7696AF #FFBFA1
-		inactive_workspace	#7696AF #7696AF #FFBFA1
+		focused_workspace	#7696AF #7696AF #E4B2A9
+		active_workspace	#7696AF #7696AF #58517A
+		inactive_workspace	#7696AF #7696AF #58517A
 		urgent_workspace	#ffffff #000000 #58517A
 	}
 
@@ -41,7 +41,7 @@ bar {
 # class                 border  backgr. text    indicator child_border
 
 client.focused          #426180 #E17A67 #ffffff #7DAEAE
-client.focused_inactive #A0A8AA #7696AF #ffffff #426180
+client.focused_inactive #A0A8AA #22A3C4 #ffffff #426180
 client.unfocused        #A0A8AA #919FBC #888888 #58615e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
