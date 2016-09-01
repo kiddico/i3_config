@@ -17,6 +17,7 @@ popup_during_fullscreen smart
 bar {
     font pango:Hack,FontAwesome 16
     position bottom
+    # enables transparency
     i3bar_command i3bar -t
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
