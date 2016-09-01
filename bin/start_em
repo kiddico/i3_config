@@ -1,5 +1,0 @@
-#!/bin/bash
-
-gnome-terminal  -e "htop" & disown
-gnome-terminal  -e "tty-clock -sc" & disown
-psensor & disown
