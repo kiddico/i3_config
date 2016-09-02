@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id "feh --bg-tile /home/nick/.config/i3/theme/background.jpg"
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font pango:Hack,FontAwesome 14
 gaps inner 10
 gaps outer 5
@@ -27,8 +27,8 @@ bar {
 		separator			#111111ff
 
 #							border› bckgrnd›textcol
-		focused_workspace	#113C3190 #113C3190 #ACCCDBff
-		active_workspace	#113C3190 #113C3190 #2839DFff
+		focused_workspace	#113C3190 #113C3190 #795EA1ff
+		active_workspace	#113C3190 #113C3190 #8BB3FFff
 		inactive_workspace	#113C3190 #113C3190 #FFE6DBff
 		urgent_workspace	#ffffff90 #00000090 #ffffffff
 	}

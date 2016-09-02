@@ -26,4 +26,3 @@ for_window [window_type=normal] border pixel 3
 assign [class="Steam"] $ws7
 assign [title="OpenGL"] $ws7
 assign [class="Spotify"] $ws8
-assign [class="spotify"] $ws8
