@@ -2,12 +2,12 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 10
-gaps outer 5
+gaps inner 15
+gaps outer 10
 hide_edge_borders none
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 2
 popup_during_fullscreen smart
 
 
@@ -23,15 +23,15 @@ bar {
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
-		background			#f0f0f0cf
+		background			#f0f0f0d8
 		statusline			#2a2a2aff
 		separator			#111111ff
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0cf #f0f0f0cf #695E91ff
-		active_workspace	#f0f0f0cf #f0f0f0cf #3a3a3aff
-		inactive_workspace	#f0f0f0cf #f0f0f0cf #2a2a2aff
-		urgent_workspace	#f0f0f0cf #f0f0f0cf #ffffffff
+		focused_workspace	#f0f0f0d8 #f0f0f0d8 #897Ea1ff
+		active_workspace	#f0f0f0d8 #f0f0f0d8 #3a3a3aff
+		inactive_workspace	#f0f0f0d8 #f0f0f0d8 #2a2a2aff
+		urgent_workspace	#f0f0f0d8 #f0f0f0d8 #ffffffff
 	}
 
 }
