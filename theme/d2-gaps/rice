@@ -23,15 +23,15 @@ bar {
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
-		background			#f0f0f0d8
+		background			#f0f0f0dd
 		statusline			#2a2a2aff
-		separator			#f0f0f0d8
+		separator			#f0f0f0dd
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0d8 #f0f0f0d8 #796E91ff
-		active_workspace	#f0f0f0d8 #f0f0f0d8 #3a3a3aff
-		inactive_workspace	#f0f0f0d8 #f0f0f0d8 #2a2a2aff
-		urgent_workspace	#f0f0f0d8 #f0f0f0d8 #ffffffff
+		focused_workspace	#f0f0f0dd #f0f0f0dd #796E91ff
+		active_workspace	#f0f0f0dd #f0f0f0dd #3a3a3aff
+		inactive_workspace	#f0f0f0dd #f0f0f0dd #2a2a2aff
+		urgent_workspace	#f0f0f0dd #f0f0f0dd #ffffffff
 	}
 
 }
