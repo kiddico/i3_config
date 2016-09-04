@@ -2,7 +2,7 @@
 # I prefer fried rice #
 #######################
 
-exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font pango:Hack,FontAwesome 14
 gaps inner 15
 gaps outer 10
