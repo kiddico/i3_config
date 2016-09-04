@@ -15,7 +15,7 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-    font pango:Hack,FontAwesome 16
+    font pango:Hack,FontAwesome 18
     position bottom
     # enables transparency
     i3bar_command i3bar -t
@@ -28,7 +28,7 @@ bar {
 		separator			#111111ff
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0d8 #f0f0f0d8 #897Ea1ff
+		focused_workspace	#f0f0f0d8 #f0f0f0d8 #796E91ff
 		active_workspace	#f0f0f0d8 #f0f0f0d8 #3a3a3aff
 		inactive_workspace	#f0f0f0d8 #f0f0f0d8 #2a2a2aff
 		urgent_workspace	#f0f0f0d8 #f0f0f0d8 #ffffffff
