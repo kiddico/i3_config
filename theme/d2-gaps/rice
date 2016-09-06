@@ -5,7 +5,7 @@
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font pango:Hack,FontAwesome 14
 gaps inner 25
-gaps outer 15
+gaps outer 10
 hide_edge_borders none
 for_window [class="^.*"] border pixel 2
 popup_during_fullscreen smart
@@ -25,7 +25,7 @@ bar {
 	colors {
 		background			#f0f0f0dd
 		statusline			#2a2a2aff
-		separator			#f0f0f0dd
+		separator			#909090dd
 
 #							border› bckgrnd›textcol
 		focused_workspace	#f0f0f0dd #f0f0f0dd #796E91ff
