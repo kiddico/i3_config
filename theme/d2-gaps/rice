@@ -28,9 +28,9 @@ bar {
 		separator			#909090dd
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0dd #f0f0f0dd #796E91ff
-		active_workspace	#f0f0f0dd #f0f0f0dd #3a3a3aff
-		inactive_workspace	#f0f0f0dd #f0f0f0dd #2a2a2aff
+		focused_workspace	#f0f0f0dd #f0f0f0dd #050505ff
+		active_workspace	#f0f0f0dd #f0f0f0dd #4a4a4aff
+		inactive_workspace	#f0f0f0dd #f0f0f0dd #9a9a9aff
 		urgent_workspace	#f0f0f0dd #f0f0f0dd #ffffffff
 	}
 
