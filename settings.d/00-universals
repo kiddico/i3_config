@@ -46,7 +46,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -86,6 +86,10 @@ set $wsKP_7 K7
 set $wsKP_8 K8
 set $wsKP_9 K9
 set $wsKP_0 K0
+
+# next / prev workspace
+bindsym $mod+s+Right workspace next
+bindsym $mod+s+Left workspace prev
 
 # switch to workspace
 ###Number Row
@@ -139,11 +143,10 @@ bindsym $mod+Shift+KP_8 move container to workspace $wsKP_8
 bindsym $mod+Shift+KP_9 move container to workspace $wsKP_9
 bindsym $mod+Shift+KP_0 move container to workspace $wsKP_0
 
-bindsym $mod+Mod1+Right workspace next
-bindsym $mod+Mod1+Left workspace prev
+bindsym $mod+mod1+Right workspace next
+bindsym $mod+mod1+Left workspace prev
 
 
-#bindsym $mod+shift+` move container to workspace $thinking
 bindsym $mod+x move workspace to output right
 
 # reload the configuration file
