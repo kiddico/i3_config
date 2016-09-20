@@ -7,7 +7,7 @@ font pango:Hack,FontAwesome 14
 #gaps inner 25
 #gaps outer 10
 hide_edge_borders none
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 popup_during_fullscreen smart
 
 
@@ -43,7 +43,7 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #d2d2d2 #D2D2D2 #2a2a2a #d2d2d2
+client.focused          #d2d2d2 #B25FBE #2a2a2a #d2d2d2
 client.focused_inactive #2A2A2A #2A2A2A #DDDDDD #2A2A2A
 client.unfocused        #2A2A2A #2A2A2A #DDDDDD #2A2A2A
 client.urgent           #2f343a #900000 #647EA0 #900000
