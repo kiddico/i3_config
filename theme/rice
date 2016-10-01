@@ -24,14 +24,14 @@ bar {
 
 	colors {
 		background			#f0f0f0dd
-		statusline			#2a2a2aff
-		separator			#909090dd
+		statusline			#6a6a6aff
+		separator			#909090BB
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0dd #f0f0f0dd #050505ff
+		focused_workspace	#f0f0f0dd #f0f0f0dd #252525ff
 		active_workspace	#f0f0f0dd #f0f0f0dd #4a4a4aff
 		inactive_workspace	#f0f0f0dd #f0f0f0dd #9a9a9aff
-		urgent_workspace	#f0f0f0dd #f0f0f0dd #ffffffff
+		urgent_workspace	#f0f0f0dd #f0f0f0dd #000000ff
 	}
 
 }
@@ -43,7 +43,7 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #d2d2d2 #D2D2D2 #2a2a2a #d2d2d2
+client.focused          #d2d2d2 #B25FBE #2a2a2a #d2d2d2
 client.focused_inactive #2A2A2A #2A2A2A #DDDDDD #2A2A2A
 client.unfocused        #2A2A2A #2A2A2A #DDDDDD #2A2A2A
 client.urgent           #2f343a #900000 #647EA0 #900000

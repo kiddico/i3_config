@@ -24,14 +24,14 @@ bar {
 
 	colors {
 		background			#f0f0f0dd
-		statusline			#2a2a2aff
-		separator			#909090dd
+		statusline			#6a6a6aff
+		separator			#909090BB
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0dd #f0f0f0dd #050505ff
+		focused_workspace	#f0f0f0dd #f0f0f0dd #252525ff
 		active_workspace	#f0f0f0dd #f0f0f0dd #4a4a4aff
 		inactive_workspace	#f0f0f0dd #f0f0f0dd #9a9a9aff
-		urgent_workspace	#f0f0f0dd #f0f0f0dd #ffffffff
+		urgent_workspace	#f0f0f0dd #f0f0f0dd #000000ff
 	}
 
 }
