@@ -33,7 +33,7 @@ bar {
 #							border› bckgrnd›textcol
 		focused_workspace	#3774C1dd #3774C1dd #0f0f0fff
 		active_workspace	#3774C1dd #3774C1dd #434343ff
-		inactive_workspace	#3774C1dd #3774C1dd #636363ff
+		inactive_workspace	#3774C1dd #3774C1dd #595959ff
 		urgent_workspace	#3774C1dd #3774C1dd #ffffffff
 	}
 
