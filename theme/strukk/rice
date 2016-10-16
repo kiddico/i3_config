@@ -24,17 +24,17 @@ bar {
 
 #f8ab6c-fe5f55-e8e288-94c9a9-7dce82
 	colors {
-		background			#7DCE82dd
+		background			#3774C1dd
 		statusline			#2a2a2aff
 		separator			#909090dd
 #6c2929-fe5f55-777da7-94c9a9-c6ecae
 # Final one VVVV
 #424b54-fe5f55-e1ce7a-94c9a9-c6ecae
 #							border› bckgrnd›textcol
-		focused_workspace	#7DCE82dd #7DCE82dd #0f0f0fff
-		active_workspace	#7DCE82dd #7DCE82dd #131313ff
-		inactive_workspace	#7DCE82dd #7DCE82dd #030303ff
-		urgent_workspace	#7DCE82dd #7DCE82dd #ffffffff
+		focused_workspace	#3774C1dd #3774C1dd #0f0f0fff
+		active_workspace	#3774C1dd #3774C1dd #434343ff
+		inactive_workspace	#3774C1dd #3774C1dd #636363ff
+		urgent_workspace	#3774C1dd #3774C1dd #ffffffff
 	}
 
 }
@@ -47,7 +47,7 @@ bar {
 # class                 border  backgr. text    indicator child_border
 
 client.focused          #d2d2d2 #fe5f55 #2a2a2a #fe5f55
-client.focused_inactive #2A2A2A #E1CE7A #DDDDDD #E1CE7A
-client.unfocused        #2A2A2A #c6ecae #DDDDDD #c6ecae
+client.focused_inactive #2A2A2A #E1CE7A #5a5a5a #E1CE7A
+client.unfocused        #2A2A2A #c6ecae #5a5a5a #c6ecae
 client.urgent           #2f343a #900000 #647EA0 #900000
 client.placeholder      #000000 #0c0c0c #647EA0 #000000
