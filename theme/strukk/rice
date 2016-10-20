@@ -9,6 +9,8 @@ gaps outer 15
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
+smart_gaps on
+smart_borders on
 
 
 #############################
