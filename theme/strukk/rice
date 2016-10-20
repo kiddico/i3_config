@@ -4,10 +4,10 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font pango:Hack,FontAwesome 14
-gaps inner 25
-gaps outer 15
+gaps inner 15
+gaps outer 10
 hide_edge_borders none
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 3
 popup_during_fullscreen smart
 smart_gaps on
 smart_borders on
@@ -17,7 +17,7 @@ smart_borders on
 # Bar! But not the fun kind #
 #############################
 bar {
-    font pango:Hack,Awesome 18
+    font pango:Hack,Awesome 20
     position bottom
     # enables transparency
     i3bar_command i3bar -t
@@ -27,7 +27,7 @@ bar {
 #f8ab6c-fe5f55-e8e288-94c9a9-7dce82
 	colors {
 		background			#3774C1dd
-		statusline			#2a2a2aff
+		statusline			#87eA5Eff
 		separator			#909090dd
 #6c2929-fe5f55-777da7-94c9a9-c6ecae
 # Final one VVVV
