@@ -1,2 +1,5 @@
 bindsym XF86Calculator exec qalculate
 bindsym Print exec maim ~/$(date +%m-%d_%H%M%S).jpg
+
+bindsym $mod+n exec sudo nvidia-settings
+
