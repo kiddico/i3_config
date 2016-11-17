@@ -7,7 +7,7 @@ font pango:Hack,FontAwesome 14
 gaps inner 15
 gaps outer 10
 hide_edge_borders none
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
 smart_gaps on
 smart_borders on
@@ -27,18 +27,18 @@ bar {
 
 #f8ab6c-fe5f55-e8e288-94c9a9-7dce82
 	colors {
-		background			#8C989F
+		background			#22615B
 		#statusline			#91A3B0
-		statusline			#445597
-		separator			#909090
+		statusline			#04BCE1
+		separator			#22615b
 #6c2929-fe5f55-777da7-94c9a9-c6ecae
 # Final one VVVV
 #424b54-fe5f55-e1ce7a-94c9a9-c6ecae
 #							border› bckgrnd›textcol
-		focused_workspace	#8C989F #8C989F #6475A7
-		active_workspace	#8C989F #8C989F #434343
-		inactive_workspace	#8C989F #8C989F #595959
-		urgent_workspace	#8C989F #8C989F #ffffff
+		focused_workspace	#22615B #22615B #649DA7
+		active_workspace	#22615B #22615B #434343
+		inactive_workspace	#22615B #22615B #A3ABB4 
+		urgent_workspace	#22615B #22615B #ffffff
 	}
 
 }
@@ -50,8 +50,8 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #d2d2d2 #fe5f55 #2a2a2a #fe5f55
-client.focused_inactive #2A2A2A #E1CE7A #5a5a5a #E1CE7A
-client.unfocused        #2A2A2A #c6ecae #5a5a5a #c6ecae
+client.focused          #d2d2d2 #5BE5FF #2a2a2a #5BE5FF
+client.focused_inactive #2A2A2A #F4CA66 #5a5a5a #F4CA66
+client.unfocused        #2A2A2A #22615b #5a5a5a #22615b
 client.urgent           #2f343a #900000 #647EA0 #900000
 client.placeholder      #000000 #0c0c0c #647EA0 #000000
