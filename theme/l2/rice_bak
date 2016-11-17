@@ -18,20 +18,20 @@ bar {
     font pango:Hack,Awesome 18
     position bottom
     # enables transparency
-    #i3bar_command i3bar -t
+    i3bar_command i3bar -t
     tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
-		background			#f0f0f0
-		statusline			#2a2a2a
-		separator			#909090
+		background			#f0f0f0dd
+		statusline			#2a2a2aff
+		separator			#909090dd
 
 #							border› bckgrnd›textcol
-		focused_workspace	#f0f0f0 #f0f0f0 #050505
-		active_workspace	#f0f0f0 #f0f0f0 #4a4a4a
-		inactive_workspace	#f0f0f0 #f0f0f0 #9a9a9a
-		urgent_workspace	#f0f0f0 #f0f0f0 #ffffff
+		focused_workspace	#f0f0f0dd #f0f0f0dd #050505ff
+		active_workspace	#f0f0f0dd #f0f0f0dd #4a4a4aff
+		inactive_workspace	#f0f0f0dd #f0f0f0dd #9a9a9aff
+		urgent_workspace	#f0f0f0dd #f0f0f0dd #ffffffff
 	}
 
 }

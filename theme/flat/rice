@@ -15,7 +15,7 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-    font pango:Hack,FontAwesome 14
+    font pango:Hack,FontAwesome 18
     position bottom
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
