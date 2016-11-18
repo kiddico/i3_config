@@ -12,6 +12,7 @@ popup_during_fullscreen smart
 smart_gaps on
 smart_borders on
 #floating_minimum_size 500 x 500
+for_window [title="^Assignment [0-9]$"] floating enable
 
 
 #############################
@@ -29,7 +30,7 @@ bar {
 	colors {
 		background			#22615B
 		#statusline			#91A3B0
-		statusline			#04BCE1
+		statusline			#84adb7
 		separator			#22615b
 #6c2929-fe5f55-777da7-94c9a9-c6ecae
 # Final one VVVV
@@ -51,7 +52,7 @@ bar {
 # class                 border  backgr. text    indicator child_border
 
 client.focused          #d2d2d2 #5BE5FF #2a2a2a #5BE5FF
-client.focused_inactive #2A2A2A #F4CA66 #5a5a5a #F4CA66
-client.unfocused        #2A2A2A #22615b #5a5a5a #22615b
+client.focused_inactive #2A2A2A #F4CA66 #5BE5FF #F4CA66
+client.unfocused        #2A2A2A #22615b #F4CA66 #22615b
 client.urgent           #2f343a #900000 #647EA0 #900000
 client.placeholder      #000000 #0c0c0c #647EA0 #000000
