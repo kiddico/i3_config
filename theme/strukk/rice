@@ -4,8 +4,8 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 15
-gaps outer 10
+gaps inner 20
+gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
@@ -26,18 +26,15 @@ bar {
     tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
-#f8ab6c-fe5f55-e8e288-94c9a9-7dce82
 	colors {
 		background			#22615B
 		#statusline			#91A3B0
 		statusline			#84adb7
 		separator			#22615b
-#6c2929-fe5f55-777da7-94c9a9-c6ecae
-# Final one VVVV
-#424b54-fe5f55-e1ce7a-94c9a9-c6ecae
+
 #							border› bckgrnd›textcol
 		focused_workspace	#22615B #22615B #649DA7
-		active_workspace	#22615B #22615B #434343
+		active_workspace	#22615B #22615B #9A82A9
 		inactive_workspace	#22615B #22615B #A3ABB4 
 		urgent_workspace	#22615B #22615B #ffffff
 	}
