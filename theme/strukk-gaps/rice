@@ -4,8 +4,8 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-#gaps inner 20
-#gaps outer 0
+gaps inner 20
+gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
