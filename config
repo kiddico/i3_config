@@ -73,7 +73,7 @@ set $ws5 5
 set $ws6 6
 set $ws7 7 
 set $ws8 8 
-set $ws9 9 
+set $ws9 9 
 set $ws10 10
 ###Numberpad
 set $wsKP_1 K1
@@ -210,7 +210,7 @@ for_window [title="Event Tester"] floating enable
 for_window [title=".* - Chat"] floating enable
 for_window [title="floater"] floating enable
 for_window [title="Terminator Preferences"] floating enable
-for_window [title="Assignment [0-9]$"] floating enable
+for_window [title="3D Gasket"] floating enable
 
 ###by type
 for_window [window_type=normal] border pixel 3
@@ -262,24 +262,27 @@ bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2
 # This one is pretty cool. If you've got a fullscreen video
 # this will make it a floating window preset to 1280x720 (kinda... you'll see)
 # hold shift when resizing to keep proportions
+#
+# Thanks /u/airblader for that one. Whata smart fella.
 bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;
-exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh & disown
-exec --no-startup-id /home/nick/.bin/TB
-for_window [class="Nvidia-settings"] floating enable
-
-bindsym XF86Calculator exec qalculate
-bindsym Print exec maim ~/$(date +%m-%d_%H%M%S).jpg
-
-bindsym $mod+n exec sudo nvidia-settings
-
+#exec --no-startup-id sudo /usr/local/bin/fix_wakeup
+#exec --no-startup-id sudo /usr/local/bin/stop_interrupts
+#exec --no-startup-id sudo /usr/local/bin/stop_interrupts
+#exec --no-startup-id light-locker --lock-on-suspend
+exec --no-startup-id sudo su -c "echo 'XHC' > /proc/acpi/wakeup"
+exec --no-startup-id nm-applet
+bindsym $mod+c exec qalculate
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
+bindsym $mod+Menu exec maim ~/$(date +%m-%d_%H%M%S).jpg
 #######################
 # I prefer fried rice #
 #######################
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 10
-gaps outer 7
+gaps inner 20
+gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
@@ -300,18 +303,15 @@ bar {
     tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
-#f8ab6c-fe5f55-e8e288-94c9a9-7dce82
 	colors {
 		background			#22615B
 		#statusline			#91A3B0
 		statusline			#84adb7
 		separator			#22615b
-#6c2929-fe5f55-777da7-94c9a9-c6ecae
-# Final one VVVV
-#424b54-fe5f55-e1ce7a-94c9a9-c6ecae
+
 #							border› bckgrnd›textcol
 		focused_workspace	#22615B #22615B #649DA7
-		active_workspace	#22615B #22615B #434343
+		active_workspace	#22615B #22615B #9A82A9
 		inactive_workspace	#22615B #22615B #A3ABB4 
 		urgent_workspace	#22615B #22615B #ffffff
 	}

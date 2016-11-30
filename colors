@@ -1,0 +1,40 @@
+dark:
+	#5C676E
+	#778289
+	#36383E
+	
+
+hightlights:
+	#7F919D
+	#4A97BA
+	#91A3B0
+	#C0926E
+	#C4B1A1
+
+greyscales:
+	#C5CCCF
+	#A3ABB4
+	
+
+#2
+
+blues:
+	#04BCE1
+	#0498DF
+	#8ABFDB
+	
+between:
+	#178890
+
+greens:
+	#22615B
+
+reds/tans:
+	#807C89
+	#9E6730
+	
+greys:
+	#8796A7
+
+weird:
+	#807C89

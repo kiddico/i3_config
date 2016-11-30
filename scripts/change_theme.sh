@@ -11,16 +11,12 @@
 # if we find one, then we can assume it's a laptop,
 # and a laptop modifier can be used.
 
-
-source ~/.bashrc
-
 if [ -d /sys/class/power_supply/BAT0 ];
 then
 	PCTYPE="laptop"
 else
 	PCTYPE="desktop"
 fi
-
 
 cd ~/.config/i3
 make $PCTYPE theme=$1

@@ -18,7 +18,7 @@ for_window [title="Event Tester"] floating enable
 for_window [title=".* - Chat"] floating enable
 for_window [title="floater"] floating enable
 for_window [title="Terminator Preferences"] floating enable
-for_window [title="Assignment 1"] floating enable
+for_window [title="3D Gasket"] floating enable
 
 ###by type
 for_window [window_type=normal] border pixel 3

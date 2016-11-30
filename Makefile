@@ -18,7 +18,7 @@ else
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
 	@cat theme/rice >> config
-	@./background_set.sh
+	@./scripts/background_set.sh
 	@i3-msg "reload"
 	@i3-msg "restart" 2>/dev/null || :
 
@@ -40,6 +40,6 @@ else
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
 	@cat theme/rice >> config
-	./background_set.sh
+	./scripts/background_set.sh
 	@i3-msg "reload"
 	@i3-msg "restart" 2>/dev/null || :

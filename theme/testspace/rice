@@ -4,16 +4,11 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.jpg"
 font pango:Hack,FontAwesome 14
-gaps inner 15
-gaps outer 5
+#gaps inner 15
+#gaps outer 5
 hide_edge_borders none
-for_window [class="^.*"] border pixel 300
+for_window [class="^.*"] border pixel 2
 popup_during_fullscreen smart
-
-###########################################
-# Things that don't yet have anoher place #
-###########################################
-floating_minimum_size 500 x 500
 
 
 #############################
@@ -25,7 +20,7 @@ bar {
     # enables transparency
     i3bar_command i3bar -t
     tray_output none
-    status_command i3status -c ~/.config/i3/theme/i3status.conf
+    status_command i3blocks
 
 	colors {
 		background			#f0f0f0dd
