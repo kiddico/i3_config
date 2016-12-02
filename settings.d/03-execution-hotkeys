@@ -16,6 +16,8 @@ bindsym $mod+t exec thunar
 #bindsym $mod+shift+o exec /usr/local/bin/lock -p
 bindsym $mod+shift+BackSpace exec /usr/local/bin/lock -p
 bindsym $mod+shift+b exec ~/.config/i3/background_set.sh
+bindsym $mod+mod1+n exec gedit; move absolute position center
+
 
 ### Media Keys
 ## From when I was a man of honor
