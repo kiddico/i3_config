@@ -1,5 +1,9 @@
 theme="current"
 
+ifndef VERBOSE
+.SILENT:
+endif
+
 desktop: 
 	@rm -f config
 	@rm -f settings.d/.*~
@@ -19,8 +23,8 @@ else
 endif
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
-	@i3-msg "reload"
-	@i3-msg "restart" 2>/dev/null || :
+	@i3-msg "reload" 1>/dev/null || :
+	@i3-msg "restart" 1>/dev/null || :
 
 laptop:
 	@rm -f config
@@ -41,5 +45,5 @@ else
 endif
 	@cat theme/rice >> config
 	./scripts/background_set.sh
-	@i3-msg "reload"
-	@i3-msg "restart" 2>/dev/null || :
+	@i3-msg "reload" 1>/dev/null || :
+	@i3-msg "restart" 1>/dev/null || :
