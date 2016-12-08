@@ -19,9 +19,8 @@ for_window [title=".* - Chat"] floating enable
 for_window [title="floater"] floating enable
 for_window [title="Terminator Preferences"] floating enable
 for_window [title="3D Gasket"] floating enable
-
-for_window [class="Gedit"] floating enable;
-for_window [class="Gedit"] resize set 800 900
+for_window [title="- gedit"] floating enable
+for_window [title="- gedit"] resize set 800 900
 
 
 ###by type

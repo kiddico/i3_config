@@ -12,7 +12,7 @@ popup_during_fullscreen smart
 smart_gaps on
 smart_borders on
 #floating_minimum_size 500 x 500
-for_window [title="^Assignment [0-9]$"] floating enable
+#for_window [title="^Assignment [0-9]$"] floating enable
 
 
 #############################
