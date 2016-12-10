@@ -48,8 +48,8 @@ bar {
 
 # class                 border  backgr. text    indicator child_border
 
-client.focused          #d2d2d2 #59BC85 #537C8A #5BE5FF
-client.focused_inactive #2A2A2A #0D4D6C #537C8A #F4CA66
-client.unfocused        #2A2A2A #489A80 #537C8A #22615b
-client.urgent           #2f343a #900000 #537C8A #900000
-client.placeholder      #000000 #0c0c0c #537C8A #000000
+client.focused          #d2d2d2 #59BC85 #537C8A #59BC85
+client.focused_inactive #2A2A2A #0D4D6C #537C8A #0D4D6C
+client.unfocused        #2A2A2A #489A80 #537C8A #489A80
+client.urgent           #2f343a #E83E90 #537C8A #537C8A
+client.placeholder      #000000 #0c0c0c #537C8A #0c0c0c
