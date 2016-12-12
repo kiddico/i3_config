@@ -9,8 +9,8 @@ font pango:Hack,FontAwesome 14
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
-smart_gaps on
-smart_borders on
+#smart_gaps on
+#smart_borders on
 #floating_minimum_size 500 x 500
 for_window [title="^Assignment [0-9]$"] floating enable
 
@@ -22,7 +22,8 @@ bar {
     font pango:Hack,Awesome 20
     position bottom
     # enables transparency
-    i3bar_command i3bar -t
+    #i3bar_command i3bar -t
+    i3bar_command i3bar
     tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 

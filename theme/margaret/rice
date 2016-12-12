@@ -19,7 +19,7 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-    font pango:Hack,Awesome 20
+    font pango:Hack,FontAwesome 20
     position bottom
     # enables transparency
     i3bar_command i3bar -t
