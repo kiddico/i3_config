@@ -3,18 +3,21 @@
 ### Greetings
 Welcome to my home, or at least the home of the thing I use to configure my home.
 
-This is possibly the most overly complex structure, just to concatenate a few files. It makes changes, and multi machine setups much easier though. Most importantly is allows themes to be configures seperately from the overall system configuration.
+This is possibly the most overly complex structure, just to concatenate a few files. It makes changes, and multi machine setups much easier though. Most importantly is allows themes to be configured seperately from the overall system configuration.
 
 ## Contents
 ### Makefile
 The make file is used to concatenate selected setting, and theme files into one config. It also moves the relevant theme files to their proper location. Follwed by reloading i3 to display the results.
 
 The syntax is as follows
-    make *pc type* [theme=*$theme*]
+    make *pc_type* [theme=*$theme*]
+
 For example:
     make desktop theme=margaret
-would add all the files in settings.d, settings.d/desktop.d, and theme/margaret to the config file into the config file. Then it would restart i3 so you can see errors, or your purty new theme.
 
+would add all the files in settings.d, settings.d/desktop.d, and theme/margaret to the config file. Then it would restart i3 so you can see errors, or your purty new theme.
+
+---
 
 ### Folder Structure
 
