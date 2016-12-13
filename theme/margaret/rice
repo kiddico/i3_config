@@ -28,14 +28,16 @@ bar {
 
 	colors {
 		background			#0d4d6c00
-		#statusline			#91A3B0
 		statusline			#59BC85
 		separator			#22615b
 
+# Commented out is the original green used. giving red a try.
 #							border› bckgrnd›textcol
-		focused_workspace	#0d4d6c #0d4d6c #44AB98
+		focused_workspace	#0d4d6c #0d4d6c #F6806D
+		#focused_workspace	#0d4d6c #0d4d6c #44AB98
 		active_workspace	#0d4d6c #0d4d6c #30A161
-		inactive_workspace	#0d4d6c #0d4d6c #1D89B8
+		inactive_workspace	#0d4d6c #0d4d6c #44AB98
+		#inactive_workspace	#0d4d6c #0d4d6c #1D89B8
 		urgent_workspace	#0d4d6c #0d4d6c #ffffff
 	}
 
