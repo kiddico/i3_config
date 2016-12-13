@@ -28,7 +28,8 @@ bar {
 
 	colors {
 		background			#0d4d6c00
-		statusline			#59BC85
+		statusline			#e081b2
+		#statusline			#59BC85
 		separator			#22615b
 
 #							border› bckgrnd›textcol
