@@ -1,0 +1,55 @@
+#######################
+# I prefer fried rice #
+#######################
+
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
+font pango:Hack,FontAwesome 14
+gaps inner 30
+gaps outer 0
+hide_edge_borders none
+for_window [class="^.*"] border pixel 4
+popup_during_fullscreen smart
+#smart_gaps on
+#smart_borders on
+#floating_minimum_size 500 x 500
+#for_window [title="^Assignment [0-9]$"] floating enable
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+bar {
+    font pango:Hack,FontAwesome 20
+    position bottom
+    # enables transparency
+    i3bar_command i3bar -t
+    tray_output none
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
+
+	colors {
+		background			#0d4d6c00
+		statusline			#59BC85
+		separator			#22615b
+
+# Commented out is the original green used. giving red a try.
+#							border› bckgrnd›textcol
+		focused_workspace	#0d4d6c #0d4d6c #44AB98
+		active_workspace	#0d4d6c #0d4d6c #30A161
+		inactive_workspace	#0d4d6c #0d4d6c #1D89B8
+		urgent_workspace	#0d4d6c #0d4d6c #ffffff
+	}
+
+}
+
+
+##########
+# Colors #
+##########
+
+# class                 border  backgr. text    indicator child_border
+
+client.focused          #d2d2d2 #59BC85 #537C8A #59BC85
+client.focused_inactive #2A2A2A #0D4D6C #537C8A #0D4D6C
+client.unfocused        #2A2A2A #115C80 #537C8A #489A80
+client.urgent           #2f343a #E83E90 #537C8A #537C8A
+client.placeholder      #000000 #0c0c0c #537C8A #0c0c0c
