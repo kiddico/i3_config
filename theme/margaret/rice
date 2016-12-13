@@ -32,10 +32,12 @@ bar {
 		separator			#22615b
 
 #							border› bckgrnd›textcol
-		focused_workspace	#0d4d6c #0d4d6c #F6806D
-		active_workspace	#0d4d6c #0d4d6c #30A161
-		inactive_workspace	#0d4d6c #0d4d6c #44AB98
-		urgent_workspace	#0d4d6c #0d4d6c #ffffff
+		focused_workspace	#0d4d6c00 #0d4d6c00 #e081b2
+		active_workspace	#0d4d6c00 #0d4d6c00 #976CBA
+		inactive_workspace	#0d4d6c00 #0d4d6c00 #9FDCA9
+		#inactive_workspace	#0d4d6c00 #0d4d6c00 #6C8CBA
+		#inactive_workspace	#0d4d6c00 #0d4d6c00 #44AB98
+		urgent_workspace	#0d4d6c00 #0d4d6c00 #ffffff
 	}
 
 }
