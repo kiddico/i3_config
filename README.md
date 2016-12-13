@@ -1,30 +1,32 @@
 # i3_config
-This was just a place to keep my config files, but now it's that, and a cool makefile to quickly swap configs around.
 
-#### The structure
-So the idea is that a simple makefile can be used to do all the configuration compilation, as long as the folder structure is there to support it. Most parts the config are made from the config.d folder, and the theme is in the theme folder (whoa! right?).
+### Greetings
+Welcome to my home, or at least the home of the thing I use to configure my home.
 
-Inside the config.d folder is a bunch of files split up into their content's functionality. Anything at the root of config.d is applied to all configurations. Inside of config.d is also laptop.d, and desktop.d. Which contain settings specific to my laptop or desktop config.
+This is possibly the most overly complex structure, just to concatenate a few files. It makes changes, and multi machine setups much easier though. Most importantly is allows themes to be configures seperately from the overall system configuration.
 
- The theme folder has one layer of folders to hold themes, and the root of the theme folder has the current theme stored in it. The last theme you set is copied over to the theme folder, and the originals are all kept in their folders. 
+## Contents
+### Makefile
+The make file is used to concatenate selected setting, and theme files into one config. It also moves the relevant theme files to their proper location. Follwed by reloading i3 to display the results.
 
-You can try to read that explenation, or just look at the folders, and makefile, and it'll make sense.
+The syntax is as follows
+    make *pc type* [theme=*$theme*]
+For example:
+    make desktop theme=margaret
+would add all the files in settings.d, settings.d/desktop.d, and theme/margaret to the config file into the config file. Then it would restart i3 so you can see errors, or your purty new theme.
 
-####Usage
-to use say your laptop config, and the light theme type
-`make laptop theme=light`
 
-if you want you can change just the config.
-`make laptop`
+### Folder Structure
 
-or re-apply the same config, with a different theme.
-`make laptop theme=light; make laptop theme=dark;`
+The most important part of this repository is the structure of the files. The make file that puts it together relies on things being in their expected location.
 
-####Things that need to be done
-move over to using xresources for more things. Seeing as i3 supports it, and rofi supports it....
+#### settings.d
+In this folder you'll find configuration files for different parts of the i3 config, but no aestetic related things. There is also a laptop.d, and desktop.d, which contain files with similar names to settings.d, but are added specifically when the desktop, or laptop make directive is used.
 
-merge with dot_files repo in a better way
+#### theme
+This folder contains the different theme folders, and the files for the last theme that was used. When a theme is selected with make the contents of that theme is first moved out to the theme directory. This way if changes are made to the settings.d files you only need to run make laptop/desktop (instead of *make laptop theme=margaret*). This is because if no theme is specified the make file just concatenates the files in the root of the theme folder.
 
-find a good way to import settings into a new system that works with the merge
+#### scripts
+I'm gonna blow your mind here, but this folder contains some scripts I use. I know. Very complex. I might write a readme just for this folder later.
 
 #####You're free to use, modify, and distribute this as you please. Or whatever.
