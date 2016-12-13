@@ -36,8 +36,6 @@ bar {
 		focused_workspace	#0d4d6c00 #0d4d6c00 #e081b2
 		active_workspace	#0d4d6c00 #0d4d6c00 #976CBA
 		inactive_workspace	#0d4d6c00 #0d4d6c00 #9FDCA9
-		#inactive_workspace	#0d4d6c00 #0d4d6c00 #6C8CBA
-		#inactive_workspace	#0d4d6c00 #0d4d6c00 #44AB98
 		urgent_workspace	#0d4d6c00 #0d4d6c00 #ffffff
 	}
 
@@ -49,7 +47,8 @@ bar {
 ##########
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #d2d2d2 #F6806D #537C8A #F6806D
+client.focused          #d2d2d2 #e081b2 #537C8A #F6806D
+#client.focused          #d2d2d2 #F6806D #537C8A #F6806D
 client.focused_inactive #2A2A2A #44ab98 #537C8A #44ab98
 client.unfocused        #2A2A2A #115C80 #537C8A #489A80
 client.urgent           #2f343a #E83E90 #537C8A #537C8A
