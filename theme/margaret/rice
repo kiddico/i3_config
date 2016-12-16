@@ -4,7 +4,7 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 30
+gaps inner 40
 gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
@@ -48,9 +48,8 @@ bar {
 ##########
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #d2d2d2 #e081b2 #537C8A #F6806D
-#client.focused          #d2d2d2 #F6806D #537C8A #F6806D
+client.focused          #d2d2d2 #e081b2 #537C8A #e081b2
 client.focused_inactive #2A2A2A #44ab98 #537C8A #44ab98
-client.unfocused        #2A2A2A #115C80 #537C8A #489A80
+client.unfocused        #2A2A2A #115C80 #537C8A #115C80
 client.urgent           #2f343a #E83E90 #537C8A #537C8A
 client.placeholder      #000000 #0c0c0c #537C8A #0c0c0c
