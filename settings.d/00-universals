@@ -75,29 +75,17 @@ bindsym $mod+a focus parent
 #set $ws8 8 
 #set $ws9 9
 #set $ws10 10
-set $ws0 ø 
-set $ws1 Ⅰ 
-set $ws2 Ⅱ 
-set $ws3 Ⅲ 
-set $ws4 Ⅳ 
-set $ws5 Ⅴ 
-set $ws6 Ⅵ 
-set $ws7 Ⅶ 
-set $ws8 Ⅷ 
-set $ws9 Ⅸ 
-set $ws10 Ⅹ 
-
-###Numberpad
-set $wsKP_1 K1
-set $wsKP_2 K2
-set $wsKP_3 K3
-set $wsKP_4 K4
-set $wsKP_5 K5
-set $wsKP_6 K6
-set $wsKP_7 K7
-set $wsKP_8 K8
-set $wsKP_9 K9
-set $wsKP_0 K0
+set $ws0 " ø"
+set $ws1 " Ⅰ"
+set $ws2 " Ⅱ"
+set $ws3 " Ⅲ"
+set $ws4 " Ⅳ"
+set $ws5 " Ⅴ"
+set $ws6 " Ⅵ"
+set $ws7 " Ⅶ"
+set $ws8 " Ⅷ"
+set $ws9 " Ⅸ"
+set $ws10 " Ⅹ"
 
 # next / prev workspace
 bindsym $mod+s+Right workspace next
@@ -117,17 +105,6 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 bindsym $mod+grave workspace $ws0
 bindsym $mod+Alt+grave workspace $ws-1
-###Numberpad
-bindsym $mod+KP_1 workspace $wsKP_1
-bindsym $mod+KP_2 workspace $wsKP_2
-bindsym $mod+KP_3 workspace $wsKP_3
-bindsym $mod+KP_4 workspace $wsKP_4
-bindsym $mod+KP_5 workspace $wsKP_5
-bindsym $mod+KP_6 workspace $wsKP_6
-bindsym $mod+KP_7 workspace $wsKP_7
-bindsym $mod+KP_8 workspace $wsKP_8
-bindsym $mod+KP_9 workspace $wsKP_9
-bindsym $mod+KP_0 workspace $wsKP_0
 
 # move focused container to workspace
 ###Number Row
@@ -143,23 +120,11 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+Shift+grave move container to workspace $ws0
 bindsym $mod+Shift+Alt+grave move container to workspace $ws-1
-###Numberpad
-bindsym $mod+Shift+KP_1 move container to workspace $wsKP_1
-bindsym $mod+Shift+KP_2 move container to workspace $wsKP_2
-bindsym $mod+Shift+KP_3 move container to workspace $wsKP_3
-bindsym $mod+Shift+KP_4 move container to workspace $wsKP_4
-bindsym $mod+Shift+KP_5 move container to workspace $wsKP_5
-bindsym $mod+Shift+KP_6 move container to workspace $wsKP_6
-bindsym $mod+Shift+KP_7 move container to workspace $wsKP_7
-bindsym $mod+Shift+KP_8 move container to workspace $wsKP_8
-bindsym $mod+Shift+KP_9 move container to workspace $wsKP_9
-bindsym $mod+Shift+KP_0 move container to workspace $wsKP_0
 
 bindsym $mod+mod1+Right workspace next
 bindsym $mod+mod1+Left workspace prev
-
-
 bindsym $mod+x move workspace to output right
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -168,28 +133,16 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# Note to self: learn to use modes cause they're freaking sweet
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-		#these were all set to 10
         bindsym h resize shrink width 5 px or 5 ppt
         bindsym j resize grow height 5 px or 5 ppt
         bindsym k resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
-		#for some reason the px values were set to 20 and the other to 10
-        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 5 px or 5 ppt
         bindsym Down resize grow height 5 px or 5 ppt
         bindsym Up resize shrink height 5 px or 5 ppt
         bindsym Right resize grow width 5 px or 5 ppt
-
-        # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
