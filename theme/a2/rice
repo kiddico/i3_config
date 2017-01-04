@@ -1,0 +1,51 @@
+#######################
+# I prefer fried rice #
+#######################
+
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
+font pango:Hack,FontAwesome 14
+gaps inner 20
+gaps outer 5
+hide_edge_borders none
+for_window [class="^.*"] border pixel 4
+popup_during_fullscreen smart
+#smart_gaps on
+#smart_borders on
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+bar {
+    font pango:Hack,FontAwesome 22
+    position bottom
+    # enables transparency
+    i3bar_command i3bar -t
+    tray_output none
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
+
+	colors {
+		background			#0d4d6c00
+		statusline			#414247ff
+		separator			#BCCC3C00
+
+#							border› bckgrnd›textcol
+		focused_workspace	#0d4d6c00 #0d4d6c00 #2E9F6F
+		active_workspace	#0d4d6c00 #0d4d6c00 #47A9C6
+		inactive_workspace	#0d4d6c00 #0d4d6c00 #414247
+		urgent_workspace	#0d4d6c00 #0d4d6c00 #ffffff
+	}
+
+}
+
+
+##########
+# Colors #
+##########
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #d2d2d2 #e081b2 #537C8A #e081b2
+client.focused_inactive #2A2A2A #44ab98 #537C8A #414247
+client.unfocused        #2A2A2A #115C80 #537C8A #44ab98
+client.urgent           #2f343a #E83E90 #537C8A #537C8A
+client.placeholder      #000000 #0c0c0c #537C8A #0c0c0c
