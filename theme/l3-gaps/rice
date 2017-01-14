@@ -4,7 +4,7 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Helvetica-Normal,Hack,FontAwesome 14
-gaps inner 50
+gaps inner 75
 gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
@@ -17,7 +17,8 @@ popup_during_fullscreen smart
 # Bar! But not the fun kind #
 #############################
 bar {
-    font pango:Helvetica-Normal,Hack,FontAwesome 24
+#    font pango:Helvetica-Normal,Hack,FontAwesome 24
+    font pango:Helvetica-Normal,FontAwesome 24
     position bottom
     # enables transparency
     i3bar_command i3bar -t
