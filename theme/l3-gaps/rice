@@ -4,7 +4,7 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Helvetica-Normal,Hack,FontAwesome 14
-gaps inner 75
+gaps inner 25
 gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
@@ -27,13 +27,13 @@ bar {
 
 	colors {
 		background  #0d4d6c00
-		statusline  #414247ff
+		statusline  #f1f1f1ff
 		separator   #BCCC3C00
 
 #                           border    bckgrnd   textcol
-		focused_workspace   #0d4d6c00 #0d4d6c00 #2E9F6F
-		active_workspace    #0d4d6c00 #0d4d6c00 #47A9C6
-		inactive_workspace  #0d4d6c00 #0d4d6c00 #414247
+		focused_workspace   #0d4d6c00 #0d4d6c00 #f1f1f1
+		active_workspace    #0d4d6c00 #0d4d6c00 #888888
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #333333
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #ffffff
 	}
 
@@ -45,8 +45,8 @@ bar {
 ##########
 
 #                        border  backgr. text    indicator
-client.focused           #d2d2d2 #2E9F6F #537C8A #2E9F6F
-client.focused_inactive  #2A2A2A #7ED5B0 #537C8A #7ED5B0
-client.unfocused         #2A2A2A #414247 #537C8A #414247
+client.focused           #d2d2d2 #f1f1f1 #537C8A #f1f1f1
+client.focused_inactive  #2A2A2A #888888 #537C8A #888888
+client.unfocused         #2A2A2A #333333 #537C8A #333333
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
 client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
