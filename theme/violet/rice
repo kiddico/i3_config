@@ -1,0 +1,52 @@
+#######################
+# I prefer fried rice #
+#######################
+exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
+font pango:Helvetica-Normal,Hack,FontAwesome 14
+gaps inner 15
+gaps outer 0
+hide_edge_borders none
+# For the record this is what changes the windows back to having title bars.
+#for_window [class="^.*"] normal 5
+for_window [class="^.*"] border pixel 6
+popup_during_fullscreen smart
+#smart_gaps on
+#smart_borders on
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+bar {
+#    font pango:Helvetica-Normal,Hack,FontAwesome 24
+    font pango:Helvetica-Normal,FontAwesome 24
+    position bottom
+    # enables transparency
+    i3bar_command i3bar -t
+    tray_output none
+    status_command i3status -c ~/.config/i3/theme/i3status.conf
+
+	colors {
+		background  #0d4d6c00
+		statusline  #635248ff
+		separator   #BCCC3C00
+#                           border    bckgrnd   textcol
+		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
+		active_workspace    #0d4d6c00 #0d4d6c00 #888888
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #A68C7D
+		urgent_workspace    #0d4d6c00 #0d4d6c00 #ffffff
+	}
+}
+##########
+# Colors #
+##########
+#                        border  backgr. text    indicator
+# Current Window
+client.focused           #d2d2d2 #5C4D43 #537C8A #5C4D43
+# Different parent, focused child
+client.focused_inactive  #2A2A2A #A68C7D #537C8A #A68C7D
+# No focues
+client.unfocused         #2A2A2A #B8B5AD #537C8A #B8B5AD
+# who cares
+client.urgent            #2f343a #E83E90 #537C8A #537C8A
+client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
