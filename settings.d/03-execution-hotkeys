@@ -8,7 +8,7 @@ bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
 bindsym $mod+Shift+T exec thunar --class floater
 
 bindsym $mod+Shift+n exec /home/nick/.bin/vibrance
-bindsym $mod+slash exec google-chrome-stable 
+#bindsym $mod+slash exec google-chrome-stable 
 bindsym $mod+Shift+p exec pavucontrol --class floater
 bindsym $mod+p exec pavucontrol
 bindsym $mod+t exec thunar

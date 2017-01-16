@@ -1,5 +1,5 @@
 bindsym XF86Calculator exec qalculate
 bindsym Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S).jpg
-
+bindsym $mod+slash exec chromium
 bindsym $mod+n exec sudo nvidia-settings
 
