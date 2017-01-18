@@ -23,7 +23,7 @@ bar {
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    tray_output none
+    #tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
