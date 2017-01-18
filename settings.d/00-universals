@@ -1,3 +1,4 @@
+new_window pixel
 # Set Some Modifiers
 set $mod Mod4
 # how does this do anything? it doesn't... you can't just hit the mod key....
