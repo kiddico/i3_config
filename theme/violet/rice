@@ -19,11 +19,11 @@ popup_during_fullscreen smart
 #############################
 bar {
 #    font pango:Helvetica-Normal,Hack,FontAwesome 24
-    font pango:Helvetica-Normal,FontAwesome 24
+    font pango:Helvetica-Normal,FontAwesome 20
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    #tray_output none
+   # tray_output none
     status_command i3status -c ~/.config/i3/theme/i3status.conf
 
 	colors {
