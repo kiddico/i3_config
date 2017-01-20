@@ -6,6 +6,8 @@ font pango:Helvetica-Normal,Hack,FontAwesome 14
 gaps inner 20
 gaps outer 0
 hide_edge_borders none
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 # For the record this is what changes the windows back to having title bars.
 #for_window [class="^.*"] normal 5
 for_window [class="^.*"] border pixel 6
@@ -17,14 +19,16 @@ popup_during_fullscreen smart
 #############################
 # Bar! But not the fun kind #
 #############################
+# For the Desktop
+# Desktop Primary Screen
 bar {
-#    font pango:Helvetica-Normal,Hack,FontAwesome 24
-    font pango:Helvetica-Normal,FontAwesome 20
+    # font pango:Helvetica-Normal,Hack,FontAwesome 24
+    font pango:Helvetica-Normal,FontAwesome 22
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-   # tray_output none
-    status_command i3status -c ~/.config/i3/theme/i3status.conf
+    tray_output none
+    status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
 	colors {
 		background  #0d4d6c00
@@ -37,6 +41,47 @@ bar {
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
 	}
 }
+
+# Desktop Secondary Screen
+bar {
+    font pango:Helvetica-Normal,FontAwesome 20
+    position bottom
+#	tray_output primary
+    i3bar_command i3bar -t # enables transparency
+    status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
+
+	colors {
+		background  #0d4d6c00
+		statusline  #635248ff
+		separator   #BCCC3C00
+#                           border    bckgrnd   textcol
+		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
+		active_workspace    #0d4d6c00 #0d4d6c00 #888888
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #A68C7D
+		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
+	}
+}
+
+# Only for the laptop
+bar {
+    position bottom
+    output ePD-1
+    font pango:Helvetica-Normal,FontAwesome 20
+    i3bar_command i3bar -t # enables transparency
+    status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
+
+	colors {
+		background  #0d4d6c00
+		statusline  #635248ff
+		separator   #BCCC3C00
+#                           border    bckgrnd   textcol
+		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
+		active_workspace    #0d4d6c00 #0d4d6c00 #888888
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #A68C7D
+		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
+	}
+}
+
 ##########
 # Colors #
 ##########
