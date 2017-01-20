@@ -16,6 +16,8 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
+	# This is the new addition
+	@cp theme/$(theme)/dunstrc ../dunst/dunstrc
 	@cp theme/$(theme)/rice theme/rice
 	@cp theme/$(theme)/i3status.conf theme/i3status.conf
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
@@ -23,6 +25,7 @@ else
 endif
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
+	@sudo killall dunst
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :
 
@@ -38,12 +41,15 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
+	# This is the new addition
+	@cp theme/$(theme)/dunstrc ../dunst/dunstrc
 	@cp theme/$(theme)/rice theme/rice
 	@cp theme/$(theme)/i3status.conf theme/i3status.conf
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
 	@cat theme/rice >> config
-	./scripts/background_set.sh
+	@./scripts/background_set.sh
+	@sudo killall dunst
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :

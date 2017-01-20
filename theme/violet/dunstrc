@@ -1,5 +1,5 @@
 [global]
-    font = Hack 14
+    font = Hack 12
     
     allow_markup = yes
     
@@ -43,20 +43,23 @@
     #icon_folders = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/
 
 [frame]
-    width = 3
-    color = "#44AB98"
+    width = 4
+#    color = "#44AB98"
+    color = "#FBF7ED"
 
 [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
 
 [urgency_low]
-    background = "#44648C"
+    #background = "#44648C"
+    background = "#FBF7ED"
     foreground = "#DC5782"
     timeout = 10
 
 [urgency_normal]
-    background = "#44648C"
+#    background = "#44648C"
+    background = "#FBF7ED"
     foreground = "#DC5782"
     timeout = 10
 
