@@ -16,16 +16,20 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
-	# This is the new addition
-	@cp theme/$(theme)/dunstrc ../dunst/dunstrc
+	# Test For, and Copy Dunst Files
+	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
+	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
+	
+	# i3blocks, i3status, and main rice
+	@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
 	@cp theme/$(theme)/rice theme/rice
-	@cp theme/$(theme)/i3status.conf theme/i3status.conf
+	# move over backgrounds if they're there.
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
-	@sudo killall dunst
+	#@sudo killall dunst 1>/dev/null || :
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :
 
@@ -41,15 +45,19 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
-	# This is the new addition
-	@cp theme/$(theme)/dunstrc ../dunst/dunstrc
+	# Test For, and Copy Dunst Files
+	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
+	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
+	
+	# i3blocks, i3status, and main rice
+	@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
 	@cp theme/$(theme)/rice theme/rice
-	@cp theme/$(theme)/i3status.conf theme/i3status.conf
+	# move over backgrounds if they're there.
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
-	@sudo killall dunst
+	#@sudo killall dunst 1>/dev/null || :
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :
