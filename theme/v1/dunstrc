@@ -1,6 +1,6 @@
 [global]
-#    font = Helvetica-Normal 20
-    font = Helvetica-Normal 18
+    font = Helvetica-Normal 20
+#    font = Helvetica-Normal 18
     
     allow_markup = yes
     
@@ -21,7 +21,7 @@
     show_age_threshold = -1
     word_wrap = yes
     ignore_newline = no
-    geometry = "550x5-60+50"
+    geometry = "450x5-60+50"
     shrink = no
     transparency = 0
     idle_threshold = 45
@@ -56,13 +56,13 @@
     #background = "#44648C"
     background = "#FBF7ED"
     foreground = "#DC5782"
-    timeout = 10
+    timeout = 15
 
 [urgency_normal]
 #    background = "#44648C"
     background = "#FBF7ED"
     foreground = "#DC5782"
-    timeout = 10
+    timeout = 15
 
 [urgency_critical]
     background = "#1d2021"
