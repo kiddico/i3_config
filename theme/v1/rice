@@ -4,7 +4,7 @@
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Helvetica-Normal,Hack,FontAwesome 14
 gaps inner 20
-gaps outer 0
+gaps outer 10
 hide_edge_borders none
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
@@ -22,8 +22,8 @@ popup_during_fullscreen smart
 # For the Desktop
 # Desktop Primary Screen
 bar {
-    # font pango:Helvetica-Normal,Hack,FontAwesome 24
-    font pango:Helvetica-Normal,FontAwesome 22
+     font pango:Helvetica-Normal,Hack,FontAwesome 24
+    #font pango:Helvetica-Normal,FontAwesome 22
     position bottom
     # enables transparency
     i3bar_command i3bar -t
