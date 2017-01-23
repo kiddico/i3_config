@@ -1,0 +1,9 @@
+#!/bin/bash
+
+### The "Goal"
+#
+#   HH:MM
+#   DD/MM/YY
+
+final=" $(date '+%R')   $(date +%D)  "
+echo "$final"
