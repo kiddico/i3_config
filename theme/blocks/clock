@@ -1,8 +1,5 @@
 #!/bin/bash
 
-### The "Goal"
-#
-#   HH:MM
-#   DD/MM/YY
+#   HH:MM   DD/MM/YY
 
 echo " $(date '+%R')   $(date +%D)  "
