@@ -5,5 +5,4 @@
 #   HH:MM
 #   DD/MM/YY
 
-final=" $(date '+%R')   $(date +%D)  "
-echo "$final"
+echo " $(date '+%R')   $(date +%D)  "
