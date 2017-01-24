@@ -21,24 +21,25 @@ STEP="${1:-5%}"
 #------------------------------------------------------------------------
 
 capability() { # Return "Capture" if the device is a capture device
-/bin/bash: :wq: command not found
+  amixer -D $MIXER get $SCONTROL |
     sed -n "s/  Capabilities:.*cvolume.*/Capture/p"
 }
 
 volume() {
   amixer -D $MIXER get $SCONTROL $(capability)
 }
-
+# So my new goal in life is to keep only the bits that leave us with a number for our volume.
 format() {
   # No idea what a perl filter is, or even how to read perl.
   # With that in mind....
 
   perl_filter='if (/.*\[(\d+%)\] (\[(-?\d+.\d+dB)\] )?\[(on|off)\]/)'
-  perl_filter+='{CORE::say $4 eq "off" ? " 0%" : "'
+  perl_filter+='{CORE::say $4 eq "off" ? " 0" : "'
   # If dB was selected, print that instead
-  perl_filter+=$([[ $STEP = *dB ]] && echo '$3' || echo ' $1')
+  perl_filter+=$([[ $STEP = *dB ]] && echo '$3' || echo '$1')
   perl_filter+='"; exit}'
   perl -ne "$perl_filter"
+  # Stop inserting a freaking percentage sign! Geezuz
 }
 
 #------------------------------------------------------------------------
