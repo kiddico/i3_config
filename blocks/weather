@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+dir=$(dirname $0)
+source $dir/util.sh
+
+full=""
+short=""
+status=0
+
+URL='http://www.accuweather.com/en/us/kent-oh/44240/weather-forecast/339994'
+SITE="$(curl -s "$URL")"
+
+weather="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $13 }'| head -1)"
+temp="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $10 }'| head -1)"
+
+if [[ $weather == *thunder* || $weather == *Thunder* ]]; then
+    icon=" "
+else
+    if [[ $weather == *rain* || $weather == *Rain* ]]; then
+        icon=""
+    else
+        if [[ $weather == *snow* || $weather == *Snow* ]]; then
+                icon=""
+        else
+            if [[ $weather == *cloud* || $weather == *Cloud* ]]; then
+                icon=""
+            else
+                icon=""
+            fi
+        fi
+    fi
+fi
+
+full="$icon $temp°"
+short="$temp°"
+
+echo $full
+#echo $short
+exit $status
