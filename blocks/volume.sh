@@ -1,27 +1,6 @@
 #!/bin/bash
-# Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
-# Copyright (C) 2014 Alexander Keller <github@nycroth.com>
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-#------------------------------------------------------------------------
-
-# The second parameter overrides the mixer selection
-# For PulseAudio users, use "pulse"
-# For Jack/Jack2 users, use "jackplug"
-# For ALSA users, you may use "default" for your primary card
-# or you may use hw:# where # is the number of the card desired
+# I mostly just use 'default'
+# Ya kinda figure 'pulse' would work on a pulseaudio system... nope.
 MIXER="default"
 [ -n "$(lsmod | grep pulse)" ] && MIXER="pulse"
 [ -n "$(lsmod | grep jack)" ] && MIXER="jackplug"
@@ -49,19 +28,25 @@ capability() { # Return "Capture" if the device is a capture device
 volume() {
   amixer -D $MIXER get $SCONTROL $(capability)
 }
-
+# So my new goal in life is to keep only the bits that leave us with a number for our volume.
 format() {
+  # No idea what a perl filter is, or even how to read perl.
+  # With that in mind....
+
   perl_filter='if (/.*\[(\d+%)\] (\[(-?\d+.\d+dB)\] )?\[(on|off)\]/)'
-  perl_filter+='{CORE::say $4 eq "off" ? "MUTE" : "'
+  perl_filter+='{CORE::say $4 eq "off" ? " 0" : "'
   # If dB was selected, print that instead
   perl_filter+=$([[ $STEP = *dB ]] && echo '$3' || echo '$1')
   perl_filter+='"; exit}'
   perl -ne "$perl_filter"
+  # Stop inserting a freaking percentage sign! Geezuz
 }
 
 #------------------------------------------------------------------------
 
 case $BLOCK_BUTTON in
+  1) pavucontrol --class floater;; # ? click
+  2) ;; # ? click
   3) amixer -q -D $MIXER sset $SCONTROL $(capability) toggle ;;  # right click, mute/unmute
   4) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}+ unmute ;; # scroll up, increase
   5) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}- unmute ;; # scroll down, decrease
