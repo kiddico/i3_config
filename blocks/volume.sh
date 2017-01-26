@@ -3,11 +3,11 @@
 percent="$(amixer -c 1 -M -D default get Master | grep -o -E [[:digit:]]+% | head -n 1)"
 percent=${percent::-1}
 if [ "$(amixer -c 1 -M -D default get Master | grep off)" != "" ]; then
-	echo " 0%"
+	echo " 0"
 	echo""
 	echo "#D7582B"
 else
-	echo " $percent%"
+	echo " $percent"
 	echo""
 	echo "#635248"
 fi

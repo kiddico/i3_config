@@ -37,7 +37,7 @@ $status = $1;
 $percent = $2;
 #$full_text = "$percent%";
 $full_text = "";
-
+# Is charging equivalant to being fully charged? If so, this is okay.
 if ($status eq 'Discharging') {
 	$full_text .= '  ';
 	#$full_text .= ' DIS';
@@ -52,7 +52,7 @@ $short_text = $full_text;
 #if ($acpi =~ /(\d\d:\d\d):/) {
 #	$full_text .= " ($1)";
 #}
-$full_text .= "$percent%";
+$full_text .= "$percent";
 
 # print text
 print "$full_text\n";
