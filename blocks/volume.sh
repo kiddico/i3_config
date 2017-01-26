@@ -17,13 +17,11 @@ fi
 # Third Line : COLOR
 
 
-
-
 case $BLOCK_BUTTON in
-  1) pavucontrol --class floater;; # ? click
-  2) ;; # ? click
-  3) amixer -q -D $MIXER sset $SCONTROL $(capability) toggle ;;  # right click, mute/unmute
-  4) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}+ unmute ;; # scroll up, increase
-  5) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}- unmute ;; # scroll down, decrease
+  1) pavucontrol --class floater;; # l click
+  2) ;; # middle clock click
+  3) amixer -q sset Master,0 toggle ;;  # right click, mute/unmute
+  4) amixer -q sset Master,0 5%+ unmute;; # scroll up, increase
+  5) amixer -q sset Master,0 5%- unmute;; # scroll down, decrease
 esac
 
