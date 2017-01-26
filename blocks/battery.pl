@@ -21,7 +21,7 @@ my $status;
 my $percent;
 my $full_text;
 my $short_text;
-my $bat_number = $ENV{BLOCK_INSTANCE} || 0;
+my $bat_number = 0;
 
 # read the first line of the "acpi" command output
 open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
@@ -35,19 +35,24 @@ if ($acpi !~ /: (\w+), (\d+)%/) {
 
 $status = $1;
 $percent = $2;
-$full_text = "$percent%";
+#$full_text = "$percent%";
+$full_text = "";
 
 if ($status eq 'Discharging') {
-	$full_text .= ' DIS';
+	$full_text .= '  ';
+	#$full_text .= ' DIS';
 } elsif ($status eq 'Charging') {
-	$full_text .= ' CHR';
+	$full_text .= '  ';
+	#$full_text .= ' CHR';
 }
 
 $short_text = $full_text;
 
-if ($acpi =~ /(\d\d:\d\d):/) {
-	$full_text .= " ($1)";
-}
+# adds the time to discharge at the end.
+#if ($acpi =~ /(\d\d:\d\d):/) {
+#	$full_text .= " ($1)";
+#}
+$full_text .= "$percent%";
 
 # print text
 print "$full_text\n";
@@ -57,13 +62,13 @@ print "$short_text\n";
 if ($status eq 'Discharging') {
 
 	if ($percent < 20) {
-		print "#FF0000\n";
+		print "#E89254\n";
 	} elsif ($percent < 40) {
-		print "#FFAE00\n";
+		print "#E8BE54\n";
 	} elsif ($percent < 60) {
-		print "#FFF600\n";
+		print "#E6E854\n";
 	} elsif ($percent < 85) {
-		print "#A8FF00\n";
+		print "#9FD84F\n";
 	}
 
 	if ($percent < 5) {
