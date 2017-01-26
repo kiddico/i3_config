@@ -34,6 +34,14 @@ fi
 full="$icon $temp°"
 short="$temp°"
 
+case $BLOCK_BUTTON in
+1) gnome-weather --class floater;; # l click
+2) ;; # middle clock click
+3) ;;  # right click, mute/unmute
+4) ;; # scroll up, increase
+5) ;; # scroll down, decrease
+esac
+
 echo $full
 #echo $short
 exit $status
