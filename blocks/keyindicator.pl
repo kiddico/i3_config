@@ -60,7 +60,7 @@ while (<XSET>) {
 close(XSET);
 
 # Output
-printf "%s\n", "";
+printf "%s\n", " ";
 printf "%s\n", $indicator;
 if (($indicators{$indicator} || 0) & $mask) {
     printf "%s\n", $color_on;
