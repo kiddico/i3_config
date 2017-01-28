@@ -1,0 +1,13 @@
+# hey, this is a bash thing, don't be stupid.
+# Ya dumb
+
+
+
+case $BLOCK_BUTTON in
+  1) ;; # left   click
+  2) ;; # middle click
+  3) ;; # right  click
+  4) ;; # scroll up
+  5) ;; # scroll down
+esac
+
