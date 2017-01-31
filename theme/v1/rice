@@ -4,8 +4,8 @@
 exec --no-startup-id "feh --bg-fill --no-ximerama /home/nick/.config/i3/theme/background.png"
 font pango:Helvetica-Normal,Hack,FontAwesome 14
 
-gaps inner 30
-gaps outer 15
+gaps inner 25
+gaps outer 20
 #smart_gaps on
 #smart_borders on
 hide_edge_borders none
@@ -22,12 +22,11 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # For the Desktop
 # Desktop Primary Screen
 bar {
-    #font pango:Helvetica-Normal,Hack,FontAwesome 24
-    font pango:Helvetica-Normal,FontAwesome 20
+    font pango:Helvetica-Normal,Hack,FontAwesome 22
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    tray_output none
+#    tray_output none
     status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
 	colors {
@@ -41,27 +40,6 @@ bar {
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
 	}
 }
-
-# Desktop Secondary Screen
-bar {
-    font pango:Helvetica-Normal,FontAwesome 20
-    position bottom
-#	tray_output primary
-    i3bar_command i3bar -t # enables transparency
-    status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
-
-	colors {
-		background  #0d4d6c00
-		statusline  #635248ff
-		separator   #BCCC3C00
-#                           border    bckgrnd   textcol
-		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
-		active_workspace    #0d4d6c00 #0d4d6c00 #888888
-		inactive_workspace  #0d4d6c00 #0d4d6c00 #A68C7D
-		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
-	}
-}
-
 # Only for the laptop
 bar {
     position bottom
