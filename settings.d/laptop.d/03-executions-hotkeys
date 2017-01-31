@@ -3,3 +3,11 @@ bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym $mod+Menu exec maim ~/$(date +%m-%d_%H%M%S).jpg
 bindsym $mod+slash exec google-chrome-stable
+
+### Use $mod + Page [Up,Down] to cycle through the workspaces.
+# This is only gonna be a laptop only kinda thing.
+# The names don't match up how I would expect them to.
+# page up is prev, and down is next.
+# But the names make sense in terms of where on the keyboard they're placed.
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next

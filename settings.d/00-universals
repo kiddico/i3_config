@@ -89,6 +89,9 @@ set $ws9 " Ⅸ"
 set $ws10 " Ⅹ"
 
 # next / prev workspace
+# ummmm.... WHAT?
+# Can we get past me in here to exlain what this could possibly mean
+# or at least how you intended for 2 non modifier keys to be used.
 bindsym $mod+s+Right workspace next
 bindsym $mod+s+Left workspace prev
 
