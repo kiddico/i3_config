@@ -52,8 +52,8 @@ else
 	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
 	
 	# i3blocks, i3status, and main rice
-	@cp theme/$(theme)/i3status.conf theme/i3status.conf
-	#@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
+	#@cp theme/$(theme)/i3status.conf theme/i3status.conf
+	@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
 	@cp theme/$(theme)/rice theme/rice
 	# move over backgrounds if they're there.
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
