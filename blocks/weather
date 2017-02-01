@@ -31,8 +31,14 @@ else
     fi
 fi
 
-full="$icon $temp°"
-short="$temp°"
+# Does not display if there's not temperature to display
+if [ $temp == "" ]; then
+	full=""
+	short=""
+else
+	full="$icon $temp°"
+	short="$temp°"
+fi
 
 case $BLOCK_BUTTON in
 1) gnome-weather --class floater;; # l click
@@ -42,6 +48,11 @@ case $BLOCK_BUTTON in
 5) ;; # scroll down, decrease
 esac
 
-echo $full
-#echo $short
+if [ $temp == "" ]; then
+	echo $full && ~/.config/i3/scripts/signalize.sh
+else
+	echo $full
+fi
+
+#echo $full
 exit $status
