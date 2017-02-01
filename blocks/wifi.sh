@@ -38,6 +38,15 @@ QUALITY=$(grep $INTERFACE /proc/net/wireless | awk '{ print int($3 * 100 / 70) }
 echo  # full text
 echo  # short text
 
+# Mouse Events
+case $BLOCK_BUTTON in
+	1) i3-msg "exec gnome-terminal --class floater -e 'nmtui'";; # l click
+	2) ;; # middle clock click
+	3) ;; # right click, mute/unmute
+	4) ;; # scroll up, increase
+	5) ;; # scroll down, decrease
+esac
+
 
 # color
 if [[ $QUALITY -ge 80 ]]; then
