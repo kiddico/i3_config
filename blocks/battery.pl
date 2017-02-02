@@ -1,27 +1,16 @@
 #!/usr/bin/perl
-#
-# Copyright 2014 Pierre Mavro <deimos@deimos.fr>
-# Copyright 2014 Vivien Didelot <vivien@didelot.org>
-#
-# Licensed under the terms of the GNU GPL v3, or any later version.
-#
-# This script is meant to use with i3blocks. It parses the output of the "acpi"
-# command (often provided by a package of the same name) to read the status of
-# the battery, and eventually its remaining time (to full charge or discharge).
-#
-# The color will gradually change for a percentage below 85%, and the urgency
-# (exit code 33) is set if there is less that 5% remaining.
 
 use strict;
 use warnings;
 use utf8;
-
 my $acpi;
 my $status;
 my $percent;
-my $full_text;
-my $short_text;
+my $full_text = "";
+my $short_text = "";
 my $bat_number = 0;
+my $battery_icon = "";
+my $color = "";
 
 # read the first line of the "acpi" command output
 open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
@@ -35,45 +24,50 @@ if ($acpi !~ /: (\w+), (\d+)%/) {
 
 $status = $1;
 $percent = $2;
-#$full_text = "$percent%";
-$full_text = "";
-# Is charging equivalant to being fully charged? If so, this is okay.
-if ($status eq 'Discharging') {
-	$full_text .= '  ';
-	#$full_text .= ' DIS';
-} elsif ($status eq 'Charging') {
-	$full_text .= '  ';
-	#$full_text .= ' CHR';
+
+if ($percent < 5) {
+	my $temp = "!  ";
+	$temp .= "$percent";
+	print "$temp";
+	exit(33);
 }
 
-$short_text = $full_text;
+if ($status eq 'Discharging') {
 
-# adds the time to discharge at the end.
-#if ($acpi =~ /(\d\d:\d\d):/) {
-#	$full_text .= " ($1)";
-#}
+	if ($percent < 30) {
+		$battery_icon ="  ";
+		$color="#9FD84F";
+	}
+	elsif ($percent < 60) {
+		$battery_icon ="  ";
+		$color="#E6E854";
+
+	}
+	elsif ($percent < 80) {
+		$battery_icon ="  ";
+		$color="#E6E854";
+
+	}
+	elsif ($percent < 99) {
+		$battery_icon ="   ";
+		$color="#E89254";
+
+	}
+
+} #End of outter if
+elsif ($status eq 'Charging') {
+	$full_text .= '  ';
+}
+
+## Concatenate all the bits together
+$full_text .= "$battery_icon";
 $full_text .= "$percent";
 
-# print text
 print "$full_text\n";
 print "$short_text\n";
+print $color;
 
-# consider color and urgent flag only on discharge
-if ($status eq 'Discharging') {
 
-	if ($percent < 20) {
-		print "#E89254\n";
-	} elsif ($percent < 40) {
-		print "#E8BE54\n";
-	} elsif ($percent < 60) {
-		print "#E6E854\n";
-	} elsif ($percent < 85) {
-		print "#9FD84F\n";
-	}
-
-	if ($percent < 5) {
-		exit(33);
-	}
-}
 
 exit(0);
+
