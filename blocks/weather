@@ -40,19 +40,21 @@ else
 	short="$temp°"
 fi
 
+# Left, Middle, Right, Up, Down
 case $BLOCK_BUTTON in
-1) gnome-weather --class floater;; # l click
-2) ;; # middle clock click
-3) ;;  # right click, mute/unmute
-4) ;; # scroll up, increase
-5) ;; # scroll down, decrease
+1) gnome-weather --class floater;;
+2) ;;
+3) xdg-open "https://www.wunderground.com/us/oh/kent" 1>/dev/null|| :;;
+4) ;;
+5) ;;
 esac
 
-if [ $temp == "" ]; then
-	echo $full && ~/.config/i3/scripts/signalize.sh
-else
-	echo $full
-fi
+# This is a poor attempt to reduce the number of requests/refreshes
+# if [ $temp == "" ]; then
+# echo $full && ~/.config/i3/scripts/signalize.sh
+# else
+# echo $full
+# fi
+echo $full
 
-#echo $full
 exit $status
