@@ -31,8 +31,5 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 ### Several Rofi Variations
 #### And a few other random things
-#bindsym $mod+d exec dmenu_run -fn 'Hack-Regular:size=10:antialias=true'
-#bindsym $mod+Tab exec lighthouse | sh
-#bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#7696AF,#E4B2A9,#7696AF,#E4B2A9,#7696AF' -color-window '#7696AF,#454545' -eh 2 -width 100 -fullscreen -padding 200 -opacity 90 -bw 0 -font 'Hack 28'-rnow"
-#bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#7696AF,#E4B2A9,#7696AF,#E4B2A9,#7696AF' -color-window '#7696AF,#454545' -eh 2 -width 100 -fullscreen -padding 200 -opacity 90 -bw 0 -font 'Hack 28' -rnow"
-bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -width 100 -fullscreen -padding 200 -opacity 90 -bw 0 -font 'Hack 28' -rnow"
+bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -width 100 -padding 200 -opacity 50 -bw 0 -font 'Hack 28' -rnow"
+#bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -width 100 -fullscreen -padding 200 -opacity 90 -bw 0 -font 'Hack 28' -rnow"
