@@ -37,8 +37,8 @@ bar {
 		separator   #BCCC3C00
 #                           border    bckgrnd   textcol
 		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
-		active_workspace    #0d4d6c00 #0d4d6c00 #888888
-		inactive_workspace  #0d4d6c00 #0d4d6c00 #A68C7D
+		active_workspace    #0d4d6c00 #0d4d6c00 #666666
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #346853
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
 	}
 }
