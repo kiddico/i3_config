@@ -19,13 +19,9 @@ else
 	# Test For, and Copy Dunst Files
 	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
 	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
-	
 	# i3blocks, i3status, and main rice
-# Hopefully I'll change over to blocks soon!
-	@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
-#	@cp theme/$(theme)/i3status.conf theme/i3status.conf
+	@cp theme/$(theme)/i3* theme/
 	@cp theme/$(theme)/rice theme/rice
-	# move over backgrounds if they're there.
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
@@ -50,12 +46,9 @@ else
 	# Test For, and Copy Dunst Files
 	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
 	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
-	
 	# i3blocks, i3status, and main rice
-	#@cp theme/$(theme)/i3status.conf theme/i3status.conf
-	@cp theme/$(theme)/i3blocks.conf theme/i3blocks.conf
+	@cp theme/$(theme)/i3* theme/
 	@cp theme/$(theme)/rice theme/rice
-	# move over backgrounds if they're there.
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
