@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#   HH:MM   DD/MM/YY
-
-# THE DASHES ARE NOT REAL
-⁚
 echo " $(date +%-d‧%-m‧%y)"
 #echo " $(date +%D)"
 
