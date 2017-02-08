@@ -32,4 +32,12 @@ This folder contains the different theme folders, and the files for the last the
 #### scripts
 I'm gonna blow your mind here, but this folder contains some scripts I use. I know. Very complex. I might write a readme just for this folder later.
 
+---
+
+## Plans
+
+---
+
+I'd like to completely redo things so that components are even more modular. For example the workspace names are built into defaults.
+
 #####You're free to use, modify, and distribute this as you please. Or whatever.
