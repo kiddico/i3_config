@@ -75,33 +75,14 @@ set $ws5 5 
 set $ws6 6 
 set $ws7 7
 set $ws8 8
-set $ws9 9
-set $ws10 10 
-# ideas:
-#	* ""
-#	* " "
-#	* " "
-#	* ""
-#	* ""
-#	* ""
-#	* ""
+set $ws9 9 
+set $ws10 10   
+# swappables
+#                      
+# the music / spotify / media workspace needs a new icon
 
-#set $ws0 " ø"
-#set $ws1 " Ⅰ"
-#set $ws2 " Ⅱ"
-#set $ws3 " Ⅲ"
-#set $ws4 " Ⅳ"
-#set $ws5 " Ⅴ"
-#set $ws6 " Ⅵ"
-#set $ws7 " Ⅶ"
-#set $ws8 " Ⅷ"
-#set $ws9 " Ⅸ"
-#set $ws10 " Ⅹ"
 
-# next / prev workspace
-# ummmm.... WHAT?
-# Can we get past me in here to exlain what this could possibly mean
-# or at least how you intended for 2 non modifier keys to be used.
+# haha what?
 bindsym $mod+s+Right workspace next
 bindsym $mod+s+Left workspace prev
 
