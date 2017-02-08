@@ -33,7 +33,8 @@ bar {
 
 	colors {
 		background  #0d4d6c00
-		statusline  #635248ff
+		statusline  #6C4B74ff
+		#statusline  #635248ff
 		separator   #BCCC3C00
 #                           border    bckgrnd   textcol
 		focused_workspace   #0d4d6c00 #0d4d6c00 #222222
