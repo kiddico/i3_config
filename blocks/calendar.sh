@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " $(date +%-d‧%-m‧%y)"
+echo " $(date +%y‧%-m‧%-d)"
 #echo " $(date +%D)"
 
 case $BLOCK_BUTTON in
