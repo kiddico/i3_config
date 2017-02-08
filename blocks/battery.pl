@@ -70,7 +70,7 @@ print "$full_text\n";	#   42 /   42
 print "$short_text\n";	# 42
 print "$color\n";		# red -> green
 
-
+# how did we get time remaining before?
 
 exit(0);
 
