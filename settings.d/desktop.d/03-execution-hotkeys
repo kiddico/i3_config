@@ -4,4 +4,4 @@ bindsym $mod+slash exec google-chrome
 #bindsym $mod+slash exec chromium
 bindsym $mod+n exec sudo nvidia-settings
 
-bindsym $mod+Shift+a exec /home/nick/.bin/loopback_audio
+bindsym $mod+Shift+a exec /home/nick/.bin/toggle_loopback
