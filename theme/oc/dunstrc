@@ -1,14 +1,7 @@
 [global]
     font = Helvetica-Normal 18
     allow_markup = yes
-    # The format of the message.  Possible variables are:
-    #   %a  appname
-    #   %s  summary
-    #   %b  body
-    #   %i  iconname (including its path)
-    #   %I  iconname (without its path)
-    #   %p  progress value if set ([  0%] to [100%]) or nothing
-    # Markup is allowed
+    #   %a  appname, %s  summary, %b  body
     format = "<b>%s</b>\n%b"
     sort = yes
     indicate_hidden = yes
@@ -22,45 +15,39 @@
     transparency = 0
     idle_threshold = 45
     monitor = 0
-    #follow = mouse
     follow = none
     sticky_history = yes
     history_length = 20
     show_indicators = yes
-    line_height = 0
-    separator_height = 7
-    padding = 5
-    #padding = 15
-    horizontal_padding = 5
-    #horizontal_padding = 15
+    line_height = 1
+    separator_height = 10
+    padding = 20
+    horizontal_padding = 20
     separator_color = frame
     startup_notification = false
-    #dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/google-chrome-beta
     icon_position = off
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    #icon_folders = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/
+    icon_folders = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/
 
 [frame]
-    width = 0
-    #width = 4
-    color = "#FBF7ED"
+    width = 4
+    color = "#CFEDE8"
 
 [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
 
 [urgency_low]
-    background = "#FBF7ED"
-    foreground = "#DC5782"
-    timeout = 15
+    background = "#9CD8DF"
+    foreground = "#315B8B"
+    timeout = 10
 
 [urgency_normal]
-    background = "#FBF7ED"
-    foreground = "#DC5782"
-    timeout = 15
+    background = "#9CD8DF"
+    foreground = "#315B8B"
+    timeout = 10
 
 [urgency_critical]
-    background = "#1d2021"
-    foreground = "#ebdbb2"
+    background = "#9CD8DF"
+    foreground = "#315B8B"
     timeout = 15
