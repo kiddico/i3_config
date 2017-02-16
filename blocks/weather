@@ -14,21 +14,21 @@ weather="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $1
 temp="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $10 }'| head -1)"
 
 if [[ $weather == *thunder* || $weather == *Thunder* ]]; then
-    icon=" "
+	icon=" "
 else
-    if [[ $weather == *rain* || $weather == *Rain* ]]; then
+	if [[ $weather == *rain* || $weather == *Rain* ]]; then
         icon=""
-    else
-        if [[ $weather == *snow* || $weather == *Snow* ]]; then
+else
+	if [[ $weather == *snow* || $weather == *Snow* ]]; then
                 icon=""
-        else
-            if [[ $weather == *cloud* || $weather == *Cloud* ]]; then
-                icon=""
-            else
-                icon=""
-            fi
-        fi
-    fi
+else
+	if [[ $weather == *cloud* || $weather == *Cloud* ]]; then
+		icon=""
+else
+		icon=""
+			fi
+		fi
+	fi
 fi
 
 # Does not display if there's not temperature to display
@@ -49,12 +49,5 @@ case $BLOCK_BUTTON in
 5) ;;
 esac
 
-# This is a poor attempt to reduce the number of requests/refreshes
-# if [ $temp == "" ]; then
-# echo $full && ~/.config/i3/scripts/signalize.sh
-# else
-# echo $full
-# fi
 echo $full
-
 exit $status
