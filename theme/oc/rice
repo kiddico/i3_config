@@ -50,8 +50,8 @@ bar {
 ##########
 #                        border  backgr. text    indicator
 # Current Window
-client.focused           #d2d2d2 #85CBCB #537C8A #85CBCB
-client.unfocused         #2A2A2A #5C4D43 #537C8A #5C4D43
+client.focused           #d2d2d2 #6FD6D6 #537C8A #6FD6D6
+client.unfocused         #2A2A2A #B7C0B4 #537C8A #B7C0B4
 client.focused_inactive  #2A2A2A #DCE9D8 #537C8A #DCE9D8
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
 client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
