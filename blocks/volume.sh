@@ -9,7 +9,7 @@ if [ "$(amixer -c 1 -M -D default get Master | grep off)" != "" ]; then
 else
 	echo " $percent"
 	echo""
-	echo "#635248"
+	echo "#c3b2a8"
 fi
 
 # First Linene : FULL_TEXT
