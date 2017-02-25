@@ -8,4 +8,5 @@
 # hold shift when resizing to keep proportions
 #
 # Thanks /u/airblader for that one. Whata smart fella.
-bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;
+bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1152;
+#bindsym $mod+y fullscreen disable; floating enable; resize set 1275 720;
