@@ -5,7 +5,7 @@ bindsym $mod+slash exec google-chrome
 bindsym $mod+n exec sudo nvidia-settings
 bindsym $mod+Shift+n exec /home/nick/.bin/vibrance
 
-bindsym $mod+Shift+a exec /home/nick/.bin/loopback_audio
+bindsym $mod+Shift+a exec /home/nick/.bin/toggle_loopback
 
 # Used to be in settings -> "04-[...]"
 # I feel like the extra file for jsut one command is sort of silly. 
