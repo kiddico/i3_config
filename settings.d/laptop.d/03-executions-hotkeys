@@ -11,3 +11,7 @@ bindsym $mod+slash exec google-chrome-stable
 # But the names make sense in terms of where on the keyboard they're placed.
 bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
+
+
+# floating video hotkey since I removed it from global settings.
+bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150;
