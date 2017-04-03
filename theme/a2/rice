@@ -44,8 +44,9 @@ bar {
 ##########
 
 #                        border  backgr. text    indicator
-client.focused           #d2d2d2 #2E9F6F #537C8A #2E9F6F
+#client.focused           #d2d2d2 #2E9F6F #537C8A #2E9F6F
+client.focused           #D57EA5 #D57EA5 #537C8A #2E9F6F
 client.focused_inactive  #2A2A2A #7ED5B0 #537C8A #7ED5B0
-client.unfocused         #2A2A2A #414247 #537C8A #414247
+client.unfocused         #414247 #414247 #537C8A #414247
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
 client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
