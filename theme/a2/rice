@@ -30,9 +30,11 @@ bar {
 		separator   #BCCC3C00
 
 #                           border    bckgrnd   textcol
-		focused_workspace   #0d4d6c00 #0d4d6c00 #2E9F6F
+		#focused_workspace   #0d4d6c00 #0d4d6c00 #2E9F6F
+		focused_workspace   #0d4d6c00 #0d4d6c00 #4FC375
 		active_workspace    #0d4d6c00 #0d4d6c00 #47A9C6
-		inactive_workspace  #0d4d6c00 #0d4d6c00 #414247
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #4A8479
+		#inactive_workspace  #0d4d6c00 #0d4d6c00 #196170
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #ffffff
 	}
 
