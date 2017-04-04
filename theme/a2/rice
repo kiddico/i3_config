@@ -4,7 +4,7 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 50
+gaps inner 35
 gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
@@ -32,11 +32,9 @@ bar {
 		separator   #BCCC3C00
 
 #                           border    bckgrnd   textcol
-		#focused_workspace   #0d4d6c00 #0d4d6c00 #2E9F6F
 		focused_workspace   #0d4d6c00 #0d4d6c00 #4FC375
 		active_workspace    #0d4d6c00 #0d4d6c00 #47A9C6
 		inactive_workspace  #0d4d6c00 #0d4d6c00 #4A8479
-		#inactive_workspace  #0d4d6c00 #0d4d6c00 #196170
 		urgent_workspace    #0d4d6c00 #0d4d6c00 #ffffff
 	}
 
@@ -48,9 +46,9 @@ bar {
 ##########
 
 #                        border  backgr. text    indicator
-#client.focused           #d2d2d2 #2E9F6F #537C8A #2E9F6F
 client.focused           #D57EA5 #D57EA5 #537C8A #D57EA5
-client.focused_inactive  #2A2A2A #7ED5B0 #537C8A #7ED5B0
-client.unfocused         #414247 #414247 #537C8A #414247
+client.focused_inactive  #50BE73 #50BE73 #537C8A #50BE73
+#client.focused_inactive  #2A2A2A #2A2A2A #537C8A #2A2A2A
+client.unfocused         #4A8479 #4A8479 #80CDBE #4A8479
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
 client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
