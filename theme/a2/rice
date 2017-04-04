@@ -22,11 +22,13 @@ bar {
     # enables transparency
     i3bar_command i3bar -t
     tray_output none
-    status_command i3status -c ~/.config/i3/theme/i3status.conf
+    #status_command i3status -c ~/.config/i3/theme/i3status.conf
+	status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
 	colors {
 		background  #0d4d6c00
-		statusline  #414247ff
+		#statusline  #414247ff
+		statusline  #4A8479ff
 		separator   #BCCC3C00
 
 #                           border    bckgrnd   textcol
@@ -47,7 +49,7 @@ bar {
 
 #                        border  backgr. text    indicator
 #client.focused           #d2d2d2 #2E9F6F #537C8A #2E9F6F
-client.focused           #D57EA5 #D57EA5 #537C8A #2E9F6F
+client.focused           #D57EA5 #D57EA5 #537C8A #D57EA5
 client.focused_inactive  #2A2A2A #7ED5B0 #537C8A #7ED5B0
 client.unfocused         #414247 #414247 #537C8A #414247
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
