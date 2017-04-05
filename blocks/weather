@@ -32,7 +32,7 @@ else
 fi
 
 # Does not display if there's not temperature to display
-if [ $temp == "" ]; then
+if [ -z $temp ]; then
 	full=""
 	short=""
 else
