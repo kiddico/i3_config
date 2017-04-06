@@ -25,6 +25,8 @@ else
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
+	@wal -t -i '/home/nick/.config/i3/theme/background.png' 2>/dev/null || :
+	@wal -t -i '/home/nick/.config/i3/theme/background.jpg' 2>/dev/null || :
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
 	#@sudo killall dunst 1>/dev/null || :
@@ -52,6 +54,8 @@ else
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
 	@cp theme/$(theme)/background.png theme/background.png 2>/dev/null || :
 endif
+	@wal -t -i '/home/nick/.config/i3/theme/background.png' 2>/dev/null || :
+	@wal -t -i '/home/nick/.config/i3/theme/background.jpg' 2>/dev/null || :
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
 	#@sudo killall dunst 1>/dev/null || :
