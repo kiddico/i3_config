@@ -4,7 +4,7 @@
 
 exec --no-startup-id "feh --bg-fill /home/nick/.config/i3/theme/background.png"
 font pango:Hack,FontAwesome 14
-gaps inner 30
+gaps inner 50
 gaps outer 0
 hide_edge_borders none
 for_window [class="^.*"] border pixel 4
@@ -21,7 +21,7 @@ bar {
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    tray_output none
+    #tray_output none
     #status_command i3status -c ~/.config/i3/theme/i3status.conf
 	status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
@@ -46,9 +46,9 @@ bar {
 ##########
 
 #                        border  backgr. text    indicator
-client.focused           #D57EA5 #D57EA5 #537C8A #D57EA5
-client.focused_inactive  #50BE73 #50BE73 #537C8A #50BE73
+client.focused           #D57EA5 #D57EA5 #356A7B #D57EA5
+client.focused_inactive  #50BE73 #50BE73 #730063 #50BE73
 #client.focused_inactive  #2A2A2A #2A2A2A #537C8A #2A2A2A
-client.unfocused         #4A8479 #4A8479 #80CDBE #4A8479
+client.unfocused         #4A8479 #4A8479 #D595B2 #4A8479
 client.urgent            #2f343a #E83E90 #537C8A #537C8A
 client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
