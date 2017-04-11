@@ -41,4 +41,4 @@ I'd like to completely redo things so that components are even more modular. For
 ## Pretty Pictures
 ![this is the a2 theme btw](http://i.imgur.com/0ZQEaoZ.jpg)
 
-#####You're free to use, modify, and distribute this as you please. Or whatever.
+#### You're free to use, modify, and distribute this as you please. Or whatever.
