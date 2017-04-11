@@ -39,6 +39,6 @@ I'm gonna blow your mind here, but this folder contains some scripts I use. I kn
 I'd like to completely redo things so that components are even more modular. For example the workspace names are built into defaults.
 
 ## Pretty Pictures
-![this is the a2 theme btw](http://imgur.com/a/HxyWx)
+![this is the a2 theme btw](http://i.imgur.com/nuKaTbQ.jpg)
 
 #### You're free to use, modify, and distribute this as you please. Or whatever.
