@@ -16,10 +16,8 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
-	# Test For, and Copy Dunst Files
-	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
-	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
-	# i3blocks, i3status, and main rice
+
+	@cp theme/$(theme)/dunstrc /home/nick/.config/dunst/dunstrc 2>/dev/null || :
 	@cp theme/$(theme)/i3* theme/
 	@cp theme/$(theme)/rice theme/rice
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
@@ -29,7 +27,7 @@ endif
 	@wal -t -i '/home/nick/.config/i3/theme/background.jpg' 2>/dev/null || :
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
-	#@sudo killall dunst 1>/dev/null || :
+	@sudo killall dunst 1>/dev/null || :
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :
 
@@ -45,10 +43,8 @@ ifeq ($(theme),"current")
 	@echo "keeping current theme"
 else
 	@rm -rf theme/background*
-	# Test For, and Copy Dunst Files
-	#@test -d ~/.config/dunst || mkdir ~/.config/dunst
-	#@cp theme/$(theme)/dunstrc ~/.config/dunst/dunstrc
-	# i3blocks, i3status, and main rice
+	@cp theme/$(theme)/dunstrc /home/nick/.config/dunst/dunstrc 2>/dev/null || :
+	@cp theme/$(theme)/i3* theme/
 	@cp theme/$(theme)/i3* theme/
 	@cp theme/$(theme)/rice theme/rice
 	@cp theme/$(theme)/background.jpg theme/background.jpg 2>/dev/null || :
@@ -58,6 +54,6 @@ endif
 	@wal -t -i '/home/nick/.config/i3/theme/background.jpg' 2>/dev/null || :
 	@cat theme/rice >> config
 	@./scripts/background_set.sh
-	#@sudo killall dunst 1>/dev/null || :
+	@sudo killall dunst 1>/dev/null || :
 	@i3-msg "reload" 1>/dev/null || :
 	@i3-msg "restart" 1>/dev/null || :
