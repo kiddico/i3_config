@@ -13,7 +13,9 @@ my $battery_icon = "";
 my $icon ="";
 my $color = "";
 
-# read the first line of the "acpi" command output
+# read the first line of the "acpi" command output.
+# ohhhh okay. I'm gonna assume that's what fills in the percent and status below.
+# also 'or die' makes me smile.
 open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
 $acpi = <ACPI>;
 close(ACPI);
@@ -33,7 +35,12 @@ if ($percent < 5) {
 	exit(33);
 }
 
-# Choose Color, anc Battery Icon
+# Now, I'm not gonna name any names,
+# but someone might want to turn this into a switch statement.
+# assuming perl supports that sort of thing...
+# I'm gonna guess yes.
+
+# Choose Color, and Battery Icon
 if ($percent < 30) {
 	$battery_icon ="";
 	$color="#E89254";
@@ -69,8 +76,4 @@ $short_text .= "$percent";
 print "$full_text\n";	#   42 /   42
 print "$short_text\n";	# 42
 print "$color\n";		# red -> green
-
-# how did we get time remaining before?
-
 exit(0);
-
