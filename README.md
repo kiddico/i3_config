@@ -37,7 +37,11 @@ I'm gonna blow your mind here, but this folder contains some scripts I use. I kn
 ## Plans
 
 I'd like to completely redo things so that components are even more modular. For example the workspace names are currently built into the global configuration. It would be nice to move those over to the theme folders instead.
+
+
 The redo would most likely include a way to not explicitly name the primary part of the make directive in the Makefile. Right now we have a laptop, and desktop section, which specifies the folder used after the global files are added. Though the system works for my current setup fairly well, it would not adjust well to having say, a desktop and 2 different laptops. I found myself in that position, and frequently had to manually change things for the second laptop. Thankfully the first one died so... solved that problem didn't we?
+
+
 Summary: More modular = more better.
 
 ## Pretty Pictures
