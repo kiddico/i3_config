@@ -7,8 +7,8 @@ full=""
 short=""
 status=0
 
-#URL='http://www.accuweather.com/en/us/kent-oh/44240/weather-forecast/339994'
-URL='http://www.accuweather.com/en/us/lexington-oh/44904/weather-forecast/2086396'
+#URL='https://www.accuweather.com/en/us/kent-oh/44240/weather-forecast/339994'
+URL='https://www.accuweather.com/en/us/lexington-oh/44904/weather-forecast/2086396'
 SITE="$(curl -s "$URL")"
 
 weather="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $13 }'| head -1)"
