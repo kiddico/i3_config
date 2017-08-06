@@ -66,19 +66,20 @@ bindsym $mod+a focus parent
 #setting workspaces
 # Some of them need a space, some of them don't.
 # We should riot.
-set $ws0 0 
-set $ws1 1
-set $ws2 2 
-set $ws3 3 
-set $ws4 4 
+set $terb 0 
+set $ws0 0 
+set $ws1 1 
+set $ws4 2 
+set $ws2 3 
+set $ws3 4 
 set $ws5 5 
 set $ws6 6 
 set $ws7 7
 set $ws8 8
 set $ws9 9 
-set $ws10 10   
+set $ws10 10 
 # swappables
-#                      
+#                              
 # the music / spotify / media workspace needs a new icon
 
 
@@ -88,6 +89,8 @@ bindsym $mod+s+Left workspace prev
 
 # switch to workspace
 ###Number Row
+bindsym $mod+Tab workspace $terb
+bindsym $mod+grave workspace $ws0
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
@@ -98,8 +101,6 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
-bindsym $mod+grave workspace $ws0
-bindsym $mod+Alt+grave workspace $ws-1
 
 # move focused container to workspace
 ###Number Row
