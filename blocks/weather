@@ -37,7 +37,8 @@ if [ -z $temp ]; then
 	full=""
 	short=""
 else
-	full="$icon $temp°"
+	cel=$(( ( $temp - 32 ) * 5 / 9 ))
+	full="$icon $temp°($cel)"
 	short="$temp°"
 fi
 
