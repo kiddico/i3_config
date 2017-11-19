@@ -9,7 +9,8 @@ status=0
 
 #URL='https://www.accuweather.com/en/us/kent-oh/44240/weather-forecast/339994'
 URL='https://www.accuweather.com/en/us/lexington-oh/44904/weather-forecast/2086396'
-SITE="$(curl -s "$URL")"
+USER_AGENT="User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36"
+SITE="$(curl -H "$USER_AGENT" -s "$URL")"
 
 weather="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $13 }'| head -1)"
 temp="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $10 }'| head -1)"
