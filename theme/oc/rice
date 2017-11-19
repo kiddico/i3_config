@@ -23,7 +23,7 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # For the Desktop
 # Desktop Primary Screen
 bar {
-    font pango:Helvetica-Normal,Hack,FontAwesome 22
+    font pango:Helvetica-Normal,Hack,FontAwesome 32
     #font pango:Helvetica-Normal,Hack,FontAwesome 19
     position bottom
     # enables transparency

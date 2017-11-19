@@ -2,12 +2,15 @@
 bindsym XF86Calculator exec qalculate
 bindsym Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S).jpg
 bindsym $mod+Shift+a exec /home/nick/.bin/toggle_loopback
-bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150;
+#bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150;
+# Centered version of the above. A E S T H E T I C
+bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150; move position center;
 
 ### Browser Crap
 #bindsym $mod+slash exec google-chrome
 #bindsym $mod+slash exec chromium
 bindsym $mod+slash exec chromium --high-dpi-support=1 --force-device-scale-factor=1.5
+bindsym $mod+Shift+slash exec chromium --high-dpi-support=1 --force-device-scale-factor=1.5 --incognito
 
 ### Graphics Related
 ## Nvidia
