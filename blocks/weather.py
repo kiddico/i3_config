@@ -40,7 +40,8 @@ def main():
         if condition in description:
             icons += icon
 
-    full_text  = f'{f_temp}°{" ".join(icons)}'
+    full_text  = f'{f_temp}°{" ".join(icons)}\u200B'
+    #full_text  = f'{f_temp}°{" ".join(icons)}'
     short_text = f'{f_temp}°'
 
     print(full_text)
