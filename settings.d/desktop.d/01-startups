@@ -1,2 +1,2 @@
-exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh
-exec --no-startup-id /home/nick/.bin/TB
+#exec --no-startup-id /home/nick/.bin/nvidia_fan_and_power.sh
+#exec --no-startup-id /home/nick/.bin/TB

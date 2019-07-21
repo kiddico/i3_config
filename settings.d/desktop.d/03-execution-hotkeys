@@ -1,26 +1,14 @@
 ### Simple utils
 bindsym XF86Calculator exec qalculate
-bindsym Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S).jpg
+bindsym Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S).png
+bindsym Shift+Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S)_select.png -s
 bindsym $mod+Shift+a exec /home/nick/.bin/toggle_loopback
-#bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150;
 # Centered version of the above. A E S T H E T I C
-#bindsym $mod+y fullscreen disable; floating enable; resize set 2027 1150; move position center;
-#bindsym $mod+y fullscreen disable; floating enable; resize set 1272 720; move position center;
 bindsym $mod+y fullscreen disable; floating enable; resize set 1272 720; move position center; border pixel 0;
 
 ### Browser Crap
-#bindsym $mod+slash exec google-chrome
-bindsym $mod+slash exec chromium
-#bindsym $mod+slash exec chromium --high-dpi-support=1 --force-device-scale-factor=1.5
-#bindsym $mod+Shift+slash exec chromium --high-dpi-support=1 --force-device-scale-factor=1.5 --incognito
-bindsym $mod+Shift+slash exec chromium --incognito
+bindsym $mod+slash exec firefox-esr
+bindsym $mod+Shift+slash exec firefox-esr --private-window
 
 ### Graphics Related
-## Nvidia
-#bindsym $mod+n exec sudo nvidia-settings
-bindsym $mod+Shift+n exec /home/nick/.bin/vibrance
-## AMD
-#hold that thought
-
-# OBS trickery
-bindsym $mod+KP_Add exec /home/nick/.config/obs-studio/durr.sh
+#bindsym $mod+Shift+n exec /home/nick/.bin/vibrance

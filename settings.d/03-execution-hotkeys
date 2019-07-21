@@ -20,13 +20,13 @@ bindsym $mod+Shift+y move position center
 ### Media Keys
 ## From when I was a man of honor
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 5%+ unmute"
+bindsym control+Shift+Up exec "amixer -q sset Master,0 5%+ unmute"
+
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5%- unmute"
+bindsym control+Shift+Down exec "amixer -q sset Master,0 5%- unmute"
+
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
-#bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
-#bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%"
-#bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5%"
 
 ### Several Rofi Variations
 #### And a few other random things
-bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -width 100 -padding 200 -opacity 50 -bw 0 -font 'Hack 28' -rnow"
-#bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -width 100 -fullscreen -padding 200 -opacity 90 -bw 0 -font 'Hack 28' -rnow"
+bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -padding 200 -opacity 50 -bw 0 -font 'Hack 20' -rnow"

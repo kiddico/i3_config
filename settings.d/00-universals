@@ -1,14 +1,22 @@
+
+# Notes and such
+#
+# Key Help (xmodmap is your friend)
+#    lock    : Caps Lock
+#    control : Control (L/R)
+#    mod1    : Alt (L/R)
+#    mod2    : Num_Lock
+#    mod3    : ?
+#    mod4    : Supers (TIL there's also a 'hyper' key...)
+
 new_window pixel
 # Set Some Modifiers
 set $mod Mod4
-# how does this do anything? it doesn't... you can't just hit the mod key....
 floating_modifier $mod
 
 ##################
 # Default Stuffs #
 ##################
-
-# Well... I mean.... I changed some stuff....
 
 # kill focused window
 bindsym $mod+q kill
@@ -117,8 +125,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-bindsym $mod+mod1+Right workspace next
-bindsym $mod+mod1+Left workspace prev
+bindsym $mod+control+Right workspace next
+bindsym $mod+control+Left workspace prev
 bindsym $mod+x move workspace to output right
 
 
