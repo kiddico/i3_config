@@ -5,6 +5,9 @@
 ### Open Programs
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
+bindsym control+Return exec gnome-terminal
+bindsym control+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
+
 bindsym $mod+Shift+T exec thunar --class floater
 
 bindsym $mod+Shift+p exec pavucontrol --class floater
@@ -26,6 +29,11 @@ bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5%- unmute"
 bindsym control+Shift+Down exec "amixer -q sset Master,0 5%- unmute"
 
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+bindsym control+shift+Right exec playerctl next
+bindsym control+shift+Left exec playerctl previous
+bindsym control+shift+space exec playerctl play-pause
+ 
 
 ### Several Rofi Variations
 #### And a few other random things
