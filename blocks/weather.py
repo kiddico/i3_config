@@ -8,6 +8,8 @@ from subprocess import run
 
 pp = pprint.PrettyPrinter(indent=4).pprint
 
+# Fontawesome weather related glyphs
+# https://fontawesome.com/cheatsheet
 conditions = {
         'cloud'      : '',
         'sun'        : '',
