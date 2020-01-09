@@ -24,7 +24,10 @@ close(ACPI);
 if ($acpi !~ /: (\w+), (\d+)%/) {
 	die "$acpi\n";
 }
-
+# if the string "Unknown" is in $acpi then there probably isn't actually a battery here...
+if (index($acpi, "Unknown") != -1) {
+	exit(33);
+}
 $status = $1;
 $percent = $2; # how does that work?...
 
