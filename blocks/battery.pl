@@ -24,9 +24,14 @@ close(ACPI);
 if ($acpi !~ /: (\w+), (\d+)%/) {
 	die "$acpi\n";
 }
-# if the string "Unknown" is in $acpi then there probably isn't actually a battery here...
+# If the string "Unknown" is in $acpi then there probably isn't actually a battery here...
+# Also, sometimes a battery that doesn't actualluy exist will be detected as 'Discharging, 0%'
+# I don't know perl so this is just going to be two ifs for now...
 if (index($acpi, "Unknown") != -1) {
-	exit(33);
+	die;
+}
+if(index($acpi, "Discharging, 0") != -1) {
+	die;
 }
 $status = $1;
 $percent = $2; # how does that work?...
