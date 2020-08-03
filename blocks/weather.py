@@ -59,11 +59,8 @@ def main():
 
     # PLEASE PAUSE FOR STATION IDENTIFICATION.
     # Mansfield / Cleveland
-    #primary = 'KMFD'
-    #backup  = 'KCLE'
-    # Columbus: John Glenn/Zoo
-    primary = 'KCMH'
-    backup  = 'KOSU'
+    primary = 'KMFD'
+    backup  = 'KCLE'
 
     url  = f'https://api.weather.gov/stations/{primary}/observations/latest'
     primary_data = json.loads(requests.get(url).content)['properties']
