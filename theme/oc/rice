@@ -5,11 +5,10 @@ exec --no-startup-id "feh --bg-fill --no-ximerama /home/nick/.config/i3/theme/ba
 font pango:Helvetica-Normal,Hack,FontAwesome 14
 
 gaps inner 25
-#gaps outer 15
-#smart_gaps on
-#smart_borders on
+gaps outer 0
+
 hide_edge_borders none
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 3
 popup_during_fullscreen smart
 
 # i3blocks thing. Please ignore.
@@ -23,11 +22,11 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # For the Desktop
 # Desktop Primary Screen
 bar {
-    font pango:Helvetica-Normal,Hack,FontAwesome 20
+    font pango:Helvetica-Normal,Hack,FontAwesome 16
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    #tray_output none
+    tray_output none
     status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
 	colors {

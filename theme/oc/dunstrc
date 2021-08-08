@@ -1,5 +1,5 @@
 [global]
-    font = Helvetica-Normal 18
+    font = Hack 18
     allow_markup = yes
     #   %a  appname, %s  summary, %b  body
     format = "<b>%s</b>\n%b"
