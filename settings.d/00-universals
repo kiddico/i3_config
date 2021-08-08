@@ -74,18 +74,16 @@ bindsym $mod+a focus parent
 #setting workspaces
 set $ws0 0 
 set $ws1 1 
-set $ws2 2 
-set $ws3 3  
-set $ws4 4 
-set $ws5 5 
-set $ws6 6 
-set $ws7 7 
-set $ws8 8 
-set $ws9 9  
-set $ws10 10 
+set $ws2 2 
+set $ws3 3 
+set $ws4 4 
+set $ws5 5 
+set $ws6 6 
+set $ws7 7 
+set $ws8 8  
+set $ws9 9 
 # swappables
-#                              
-# the music / spotify / media workspace needs a new icon
+#                                
 
 
 # haha what?
@@ -95,6 +93,8 @@ bindsym $mod+s+Left workspace prev
 # switch to workspace
 ###Number Row
 bindsym $mod+grave workspace $ws0
+# This makes the weird varmillo keyboard not freak out
+bindsym $mod+Escape workspace $ws0
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
@@ -104,7 +104,7 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+bindsym $mod+0 workspace $ws0
 
 # move focused container to workspace
 ###Number Row
@@ -135,14 +135,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 2 px or 2 ppt
+        bindsym j resize grow height 2 px or 2 ppt
+        bindsym k resize shrink height 2 px or 2 ppt
+        bindsym l resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 2 px or 2 ppt
+        bindsym Down resize grow height 2 px or 2 ppt
+        bindsym Up resize shrink height 2 px or 2 ppt
+        bindsym Right resize grow width 2 px or 2 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }

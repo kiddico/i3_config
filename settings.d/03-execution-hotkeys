@@ -14,7 +14,8 @@ bindsym $mod+Shift+p exec pavucontrol --class floater
 bindsym $mod+p exec pavucontrol
 bindsym $mod+t exec thunar
 #bindsym $mod+shift+o exec /usr/local/bin/lock -p
-bindsym $mod+shift+BackSpace exec /usr/local/bin/lock
+#bindsym $mod+shift+BackSpace exec /usr/local/bin/lock
+bindsym $mod+shift+BackSpace exec /usr/bin/i3lock
 bindsym $mod+shift+b exec ~/.config/i3/background_set.sh
 bindsym $mod+mod1+n exec gedit; move absolute position center
 bindsym $mod+Shift+y move position center
@@ -24,9 +25,11 @@ bindsym $mod+Shift+y move position center
 ## From when I was a man of honor
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 5%+ unmute"
 bindsym control+Shift+Up exec "amixer -q sset Master,0 5%+ unmute"
+bindsym control+Shift+w exec "amixer -q sset Master,0 5%+ unmute"
 
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5%- unmute"
 bindsym control+Shift+Down exec "amixer -q sset Master,0 5%- unmute"
+bindsym control+Shift+s exec "amixer -q sset Master,0 5%- unmute"
 
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
@@ -37,4 +40,6 @@ bindsym control+shift+space exec playerctl play-pause
 
 ### Several Rofi Variations
 #### And a few other random things
-bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -padding 200 -opacity 50 -bw 0 -font 'Hack 20' -rnow"
+#bindsym $mod+d exec "rofi -show run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -padding 200 -opacity 50 -bw 0 -font 'Hack 20' -rnow"
+# This does regular stuff, and items specified in .desktop files (like in ~/.local/share/applications
+bindsym $mod+d exec "rofi -show combi -combi-modi drun,run -lines 9 -color-normal '#2a2a2a,#d2d2d2,#2a2a2a,#d2d2d2,#2a2a2a' -color-window '#2a2a2a,#d2d2d2' -eh 2 -padding 200 -opacity 50 -bw 0 -font 'Hack 20' -rnow"

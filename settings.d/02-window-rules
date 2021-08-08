@@ -15,7 +15,7 @@ for_window [window_role="floatterm"] floating enable
 
 ###by title (WM_NAME)
 for_window [title="Event Tester"] floating enable
-for_window [title=".* - Chat"] floating enable
+#for_window [title=".* - Chat"] floating enable
 for_window [title="floater"] floating enable
 for_window [title="Terminator Preferences"] floating enable
 for_window [title="3D Gasket"] floating enable
