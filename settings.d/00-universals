@@ -74,14 +74,14 @@ bindsym $mod+a focus parent
 #setting workspaces
 set $ws0 0 
 set $ws1 1 
-set $ws2 2 
-set $ws3 3 
-set $ws4 4 
-set $ws5 5 
-set $ws6 6 
-set $ws7 7 
-set $ws8 8  
-set $ws9 9 
+set $ws2 2 
+set $ws3 3 
+set $ws4 4 
+set $ws5 5 
+set $ws6 6 
+set $ws7 7 
+set $ws8 8 
+set $ws9 9 
 # swappables
 # pssssst : https://fontawesome.com/v4.7/cheatsheet/
 #                                
@@ -136,14 +136,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym h resize shrink width 4 px or 4 ppt
-        bindsym j resize grow height 4 px or 4 ppt
-        bindsym k resize shrink height 4 px or 4 ppt
-        bindsym l resize grow width 4 px or 4 ppt
-        bindsym Left resize shrink width 4 px or 4 ppt
-        bindsym Down resize grow height 4 px or 4 ppt
-        bindsym Up resize shrink height 4 px or 4 ppt
-        bindsym Right resize grow width 4 px or 4 ppt
+        bindsym h resize shrink width 20 px or 4 ppt
+        bindsym j resize grow height 20 px or 4 ppt
+        bindsym k resize shrink height 20 px or 4 ppt
+        bindsym l resize grow width 20 px or 4 ppt
+        bindsym Left resize shrink width 20 px or 4 ppt
+        bindsym Down resize grow height 20 px or 4 ppt
+        bindsym Up resize shrink height 20 px or 4 ppt
+        bindsym Right resize grow width 20 px or 4 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
