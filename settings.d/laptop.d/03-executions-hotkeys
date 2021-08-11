@@ -4,6 +4,9 @@ bindsym XF86MonBrightnessDown exec light -U 10
 bindsym $mod+Menu exec maim ~/$(date +%m-%d_%H%M%S).jpg
 bindsym $mod+slash exec google-chrome-stable
 
+bindsym $mod+Print exec maim ~/workshop/scrots/$(date +%m-%d_%H%S).png
+bindsym $mod+Shift+Print exec maim ~/workshop/scrots/select_$(date +%m-%d_%H%S).png -s
+
 ### Use $mod + Page [Up,Down] to cycle through the workspaces.
 # This is only gonna be a laptop only kinda thing.
 # The names don't match up how I would expect them to.
