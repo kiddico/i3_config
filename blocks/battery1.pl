@@ -8,7 +8,7 @@ my $status;
 my $percent;
 my $full_text = "";
 my $short_text = "";
-my $bat_number = 0;
+my $bat_number = 1;
 my $battery_icon = "";
 my $icon ="";
 my $color = "";
@@ -50,7 +50,7 @@ if ($percent < 5) {
 
 # Choose Color, and Battery Icon
 if ($percent < 30) {
-	$battery_icon =";
+	$battery_icon ="";
 	$color="#E89254";
 
 }elsif ($percent < 60) {
@@ -73,11 +73,13 @@ if ($status eq 'Discharging') {
 elsif ($status eq 'Charging') {
 	$icon= "";
 }
-else {
+else{
     $icon=$battery_icon;
 }
 
-
+if ($percent<=5) {
+	exit(0);	
+}
 
 ## Concatenate all the bits together
 ### note: do NOT include EOL!!
