@@ -21,6 +21,8 @@ for_window [title="Terminator Preferences"] floating enable
 for_window [title="3D Gasket"] floating enable
 #for_window [title="- gedit"] floating enable
 #for_window [title="- gedit"] resize set 800 900
+for_window [title="Bluetooth Devices"] floating enable
+for_window [title="Bluetooth Devices"] resize set 500 900
 
 
 ###by type
