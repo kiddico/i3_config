@@ -9,7 +9,7 @@ gaps outer 0
 #smart_gaps on
 #smart_borders on
 hide_edge_borders none
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 4
 popup_during_fullscreen smart
 
 # i3blocks thing. Please ignore.
@@ -27,7 +27,7 @@ bar {
     position bottom
     # enables transparency
     i3bar_command i3bar -t
-    #tray_output none
+    tray_output none
     status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
 
 	colors {
