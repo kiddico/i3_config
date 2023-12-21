@@ -1,7 +1,6 @@
 #######################
 # I prefer fried rice #
 #######################
-#exec --no-startup-id "feh --bg-fill --no-ximerama /home/nick/.config/i3/theme/background.png"
 font pango:Helvetica-Normal,Hack,FontAwesome 14
 
 gaps inner 25
