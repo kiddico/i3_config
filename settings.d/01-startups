@@ -1,9 +1,15 @@
 #######################################
 # Startup Applications / Matt Daemons #
 #######################################
-#exec --no-startup-id nm-applet
-exec --no-startup-id compton --config ~/.config/compton.conf -d :0
-exec --no-startup-id redshift -l 41.154426:-81.333052
-exec --no-startup-id light-locker --lock-on-suspend
-exec --no-startup-id wal -t -i "/home/nick/.config/i3/theme/background.jpg"
+#exec --no-startup-id redshift -l 41.154426:-81.333052
+#exec --no-startup-id light-locker --lock-on-suspend
+#exec --no-startup-id wal -t -i "/home/nick/.config/i3/theme/background.jpg"
+
+exec_always --no-startup-id killall compton; compton --config ~/.config/compton.conf -d :0
+exec_always --no-startup-id feh --bg-fill /home/nick/.config/i3/black.png
+exec_always --no-startup-id /home/nick/.screenlayout/screen_reconing.sh
 exec --no-startup-id sudo powertop --autotune
+exec --no-startup-id nm-applet
+
+#workspace 0  output DP-4 eDP-1
+exec i3-msg "workspace 0 "
