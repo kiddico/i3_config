@@ -1,8 +1,9 @@
 #!/bin/bash
 
-percent="$(amixer -c 1 -M -D default get Master | grep -o -E [[:digit:]]+% | head -n 1)"
+device_num=0
+percent="$(amixer -c "$device_num" -M -D default get Master | grep -o -E [[:digit:]]+% | head -n 1)"
 percent=${percent::-1}
-if [ "$(amixer -c 1 -M -D default get Master | grep off)" != "" ]; then
+if [ "$(amixer -c "$device_num" -M -D default get Master | grep off)" != "" ]; then
 	echo " 0"
 	echo""
 	echo "#D7582B"
