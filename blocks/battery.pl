@@ -69,6 +69,11 @@ if ($percent < 30) {
 # Use the battery icon chosen above or wall plug icon
 if ($status eq 'Discharging') {
 	$icon=$battery_icon;
+	# For some reason if my framework laptop is at 100% charge it will report
+	# that it's discharging despite being plugged in.
+	if ($percent eq 100){
+		$icon= "";
+	}
 }
 elsif ($status eq 'Charging') {
 	$icon= "";
@@ -86,7 +91,7 @@ $full_text .= "$icon $percent";
 #$full_text .= "$percent";
 $short_text .= "$percent";
 
-print "$full_text\n";	#   42 /   42
-print "$short_text\n";	# 42
-print "$color\n";		# red -> green
+print "$full_text\n";  #   42 /   42
+print "$short_text\n"; # 42
+print "$color\n";      # red -> green
 exit(0);
