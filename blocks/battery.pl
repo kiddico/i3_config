@@ -82,8 +82,8 @@ else {
 ## Concatenate all the bits together
 ### note: do NOT include EOL!!
 
-#$full_text .= "$icon $percent";
-$full_text .= "$percent";
+$full_text .= "$icon $percent";
+#$full_text .= "$percent";
 $short_text .= "$percent";
 
 print "$full_text\n";	#   42 /   42
