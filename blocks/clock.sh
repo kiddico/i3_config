@@ -10,4 +10,4 @@ case $BLOCK_BUTTON in
 5) ;; # scroll down
 esac
 
-echo " $(date '+%R') "
+echo " $(date '+%R')"
