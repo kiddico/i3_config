@@ -4,11 +4,11 @@ device_num=0
 percent="$(amixer -c "$device_num" -M -D default get Master | grep -o -E [[:digit:]]+% | head -n 1)"
 percent=${percent::-1}
 if [ "$(amixer -c "$device_num" -M -D default get Master | grep off)" != "" ]; then
-	echo " 0 "
+	echo " 0"
 	echo""
 	echo "#D7582B"
 else
-	echo " $percent "
+	echo " $percent"
 	echo""
 	echo "#c3b2a8"
 fi

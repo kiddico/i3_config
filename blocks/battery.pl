@@ -110,7 +110,7 @@ $full_text .= "$icon$percent";
 #$full_text .= "$percent";
 $short_text .= "$percent";
 
-print "$full_text\n";  #   42 /   42
-print "$short_text\n"; # 42
+print "$full_text \n";  #   42 /   42
+print "$short_text \n"; # 42
 print "$color\n";      # red -> green
 exit(0);
