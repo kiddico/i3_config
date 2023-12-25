@@ -30,9 +30,10 @@ if(index($acpi, "Discharging, 0") != -1) {
 	die;
 }
 
-if(index($acpi, "Not Charging") != -1) {
+if(index($acpi, "Not Charging") eq -1) {
 	# fail on unexpected output
 	if ($acpi !~ /: (\w+), (\d+)%/) {
+		print "cvbcb";
 		die "$acpi\n";
 	}
 	
@@ -110,7 +111,7 @@ $full_text .= "$icon$percent";
 #$full_text .= "$percent";
 $short_text .= "$percent";
 
-print "$full_text \n";  #   42 /   42
-print "$short_text \n"; # 42
+print "$full_text\n";  #   42 /   42
+print "$short_text\n"; # 42
 print "$color\n";      # red -> green
 exit(0);
