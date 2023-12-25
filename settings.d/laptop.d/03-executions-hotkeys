@@ -17,4 +17,5 @@ bindsym $mod+Next workspace next
 
 
 # floating video hotkey since I removed it from global settings.
-bindsym $mod+y fullscreen disable; floating enable; resize set 1280 720;
+#bindsym $mod+y fullscreen disable; floating enable; resize set 2465 1390;
+bindsym $mod+y fullscreen disable; floating enable; resize set 1914 1080;
