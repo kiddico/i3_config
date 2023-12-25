@@ -6,6 +6,6 @@ exec --no-startup-id xinput set-prop 'Logitech USB Receiver' "Coordinate Transfo
 #exec_always --no-startup-id killall compton; compton --config ~/.config/compton.conf -d :0
 exec --no-startup-id picom -b
 exec --no-startup-id sudo powertop --autotune*
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-fill /home/nick/.config/i3/theme/background.*
 exec_always --no-startup-id sleep 1.5; /home/nick/.config/i3/scripts/screen_reconing.sh
