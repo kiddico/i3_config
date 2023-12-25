@@ -20,21 +20,33 @@ open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
 $acpi = <ACPI>;
 close(ACPI);
 
-# fail on unexpected output
-if ($acpi !~ /: (\w+), (\d+)%/) {
-	die "$acpi\n";
-}
 # If the string "Unknown" is in $acpi then there probably isn't actually a battery here...
 # Also, sometimes a battery that doesn't actualluy exist will be detected as 'Discharging, 0%'
 # I don't know perl so this is just going to be two ifs for now...
-#if (index($acpi, "Unknown") != -1) {
-#	die;
-#}
+if (index($acpi, "Unknown") != -1) {
+	die;
+}
 if(index($acpi, "Discharging, 0") != -1) {
 	die;
 }
-$status = $1;
-$percent = $2; # how does that work?...
+
+if(index($acpi, "Not Charging") != -1) {
+	# fail on unexpected output
+	if ($acpi !~ /: (\w+), (\d+)%/) {
+		die "$acpi\n";
+	}
+	
+	$status = $1;
+	$percent = $2; # how does that work?...
+}
+else{
+	if ($acpi !~ /: (\w+) (\w+), (\d+)%/) {
+		die "$acpi\n";
+	}
+
+	$status = "$1 $2";
+	$percent = $3; # how does that work?...
+}
 
 if ($percent < 5) {
 	my $temp = "!  ";
@@ -73,10 +85,14 @@ if ($status eq 'Discharging') {
 	# that it's discharging despite being plugged in.
 	if ($percent eq 100){
 		$icon= "";
-		$percent=""
+		$percent="";
 	}
 }
 elsif ($status eq 'Charging') {
+	$icon= "";
+}
+elsif (index($acpi, "Not charging") != -1) {
+	$percent= "";
 	$icon= "";
 }
 else {
@@ -87,8 +103,10 @@ else {
 
 ## Concatenate all the bits together
 ### note: do NOT include EOL!!
-
-$full_text .= "$icon $percent";
+if ($percent ne ""){
+	$percent= " $percent";
+}
+$full_text .= "$icon$percent";
 #$full_text .= "$percent";
 $short_text .= "$percent";
 
