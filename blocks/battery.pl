@@ -73,6 +73,7 @@ if ($status eq 'Discharging') {
 	# that it's discharging despite being plugged in.
 	if ($percent eq 100){
 		$icon= "";
+		$percent=""
 	}
 }
 elsif ($status eq 'Charging') {
