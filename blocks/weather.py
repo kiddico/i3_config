@@ -97,7 +97,7 @@ def handle_action(mouse_action):
     if mouse_action:
         # Left Click
         if mouse_action == '1': 
-            run(['gnome-weather --class floater'], shell=True )
+            run(['gnome-weather'], shell=True )
 
 
 
