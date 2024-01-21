@@ -33,7 +33,6 @@ if(index($acpi, "Discharging, 0") != -1) {
 if(index($acpi, "Not Charging") eq -1) {
 	# fail on unexpected output
 	if ($acpi !~ /: (\w+), (\d+)%/) {
-		print "cvbcb";
 		die "$acpi\n";
 	}
 	
