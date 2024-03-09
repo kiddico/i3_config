@@ -17,10 +17,10 @@ def main():
         elif len(argv) == 3:
             change_by = int(argv[1]+argv[2])
 
-        to_set = int((current_percent+change_by)/100*96000)
+        to_set = int( (current_percent+change_by) / 100 * 96000 )
 
     else:
-            to_set = int( (float(argv[1])/100) * 96000 )
+        to_set = int( (float(argv[1]) / 100) * 96000 )
     try:
         command_string = f"echo {to_set} | sudo tee /sys/class/backlight/intel_backlight/brightness"
         system(command_string)
