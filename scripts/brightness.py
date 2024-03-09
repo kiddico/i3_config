@@ -6,11 +6,11 @@ from os import system
 
 
 def main():
-    # +10 or -10
+
     if '+' in argv[1] or '-' in argv[1]:
         with open('/sys/class/backlight/intel_backlight/brightness') as current_brightness:
             current=int(current_brightness.readline())
-        current_percent=int((current/96000)*100)
+            current_percent=int((current/96000)*100)
 
         if len(argv) == 2:
             change_by = int(argv[1])
@@ -19,7 +19,6 @@ def main():
 
         to_set = int((current_percent+change_by)/100*96000)
 
-    # If we're just given a number then we can just set the value
     else:
             to_set = int( (float(argv[1])/100) * 96000 )
     try:
