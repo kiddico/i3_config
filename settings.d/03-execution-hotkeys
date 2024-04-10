@@ -8,10 +8,9 @@ bindsym $mod+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
 bindsym control+Return exec gnome-terminal
 bindsym control+Shift+Return exec gnome-terminal --role="floatterm" --geometry=
 
-bindsym $mod+Shift+T exec thunar --class floater
-
 bindsym $mod+Shift+p exec pavucontrol --class floater
 bindsym $mod+p exec pavucontrol
+bindsym $mod+shift+t exec nautilus
 bindsym $mod+t exec thunar
 #bindsym $mod+shift+o exec /usr/local/bin/lock -p
 #bindsym $mod+shift+BackSpace exec /usr/local/bin/lock
