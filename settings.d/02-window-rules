@@ -3,6 +3,7 @@
 #############################
 ###by class
 for_window [class="Qalculate"] floating enable
+for_window [class="pavucontrol"] floating enable
 for_window [class="floater"] floating enable
 # This was getting kind of annoying, but just in case the new way is even worse...
 #for_window [class="Nvidia-settings"] floating enable
