@@ -2,7 +2,7 @@
 # Startup Applications / Matt Daemons #
 #######################################
 
-exec_always --no-startup-id xinput set-prop 'Logitech USB Receiver' "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
+#exec_always --no-startup-id xinput set-prop 'Logitech USB Receiver' "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
 #exec_always --no-startup-id killall compton; compton --config ~/.config/compton.conf -d :0
 exec_always --no-startup-id killall picom; picom -b
 #exec --no-startup-id sudo powertop --autotune*
@@ -10,3 +10,4 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id blueman-applet
 exec_always --no-startup-id feh --bg-fill /home/nick/.config/i3/theme/background.*
 #exec_always --no-startup-id sleep 1.5; /home/nick/.config/i3/scripts/screen_reconing.sh
+exec_wlays --no-startup-id wal -R

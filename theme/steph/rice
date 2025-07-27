@@ -1,0 +1,55 @@
+#######################
+# I prefer fried rice #
+#######################
+font pango:Helvetica-Normal,Hack,FontAwesome 14
+
+gaps inner 25
+gaps outer 0
+
+hide_edge_borders none
+for_window [class="^.*"] border pixel 2
+popup_during_fullscreen smart
+
+# i3blocks thing. Please ignore.
+# tells the cap block to change color
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+
+
+#############################
+# Bar! But not the fun kind #
+#############################
+# For the Desktop
+# Desktop Primary Screen
+bar {
+    font pango:Helvetica-Normal,Hack,FontAwesome 14
+    position bottom
+    # enables transparency
+    i3bar_command i3bar -t
+    #tray_output none
+    tray_output primary
+    status_command i3blocks -c ~/.config/i3/theme/i3blocks.conf
+
+	colors {
+		background  #0d4d6c00
+		statusline  #79C3C4ff
+		#statusline  #635248ff
+		separator   #BCCC3C00
+#                           border    bckgrnd   textcol
+		focused_workspace   #0d4d6c00 #0d4d6c00 #DCE9D8
+		active_workspace    #0d4d6c00 #0d4d6c00 #B6C9C5
+		inactive_workspace  #0d4d6c00 #0d4d6c00 #74a893
+		urgent_workspace    #0d4d6c00 #0d4d6c00 #FFCB72
+	}
+}
+
+
+##########
+# Colors #
+##########
+#                        border  backgr. text    indicator
+# Current Window
+client.focused           #d2d2d2 #6FD6D6 #537C8A #6FD6D6
+client.unfocused         #2A2A2A #B7C0B4 #537C8A #B7C0B4
+client.focused_inactive  #2A2A2A #DCE9D8 #537C8A #DCE9D8
+client.urgent            #2f343a #E83E90 #537C8A #537C8A
+client.placeholder       #000000 #0c0c0c #537C8A #0c0c0c
