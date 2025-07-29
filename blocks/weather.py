@@ -99,7 +99,7 @@ def handle_action(mouse_action):
     if mouse_action:
         # Left Click
         if mouse_action == '1':
-            run(['i3-msg "exec gnome-weather"'], shell=True )
+            run(['i3-msg "exec gnome-weather"'], shell=True, capture_output=True)
             #run(['gnome-weather'], shell=True )
 
 
