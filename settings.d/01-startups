@@ -3,8 +3,9 @@
 #######################################
 
 #exec_always --no-startup-id xinput set-prop 'Logitech USB Receiver' "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
+exec_always --no-startup-id xinput set-prop 'Logitech MX Anywhere 3' "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
 #exec_always --no-startup-id killall compton; compton --config ~/.config/compton.conf -d :0
-exec_always --no-startup-id killall picom; picom -b
+exec_always --no-startup-id killall picom; picom -b --config ~/.config/picom/picom.conf
 #exec --no-startup-id sudo powertop --autotune*
 exec --no-startup-id nm-applet
 #exec --no-startup-id blueman-applet
