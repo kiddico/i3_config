@@ -89,8 +89,6 @@ def main():
     # Handle mouse actions
     try:
         env_str = 'BLOCK_BUTTON'
-        with open("/home/nick/block_out.log",'a') as logfile:
-            logfile.write(str(os.environ))
         mouse_action = os.environ[env_str] if env_str in os.environ else None
         handle_action(mouse_action)
     except Exception as e:
