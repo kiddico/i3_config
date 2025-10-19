@@ -11,4 +11,4 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id blueman-applet
 exec_always --no-startup-id feh --bg-fill /home/nick/.config/i3/theme/background.*
 #exec_always --no-startup-id sleep 1.5; /home/nick/.config/i3/scripts/screen_reconing.sh
-exec_wlays --no-startup-id wal -R
+exec_always --no-startup-id wal -R
